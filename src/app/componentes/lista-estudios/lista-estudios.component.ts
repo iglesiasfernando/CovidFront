@@ -202,8 +202,10 @@ import {FormControl} from '@angular/forms';
       this.servicioRouter.navigate(['/detalleUsuario', idUsuario])
     }
   
-    eliminar(id:string){
-      
+    getFormattedResult(result){
+
+      return {'backgroundColor':'green' };
     }
+
   }
   
