@@ -1,0 +1,18 @@
+html, body {
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.greenColor{
+    color : green!important;
+  }
+  
+  .redColor{
+    color : red!important;
+  }
+  
+  .blueColor{
+    color : blue!important;
+  }
+ 

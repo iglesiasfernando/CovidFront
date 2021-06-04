@@ -1,0 +1,122 @@
+
+
+
+
+<div class="w-50 marginTop1 marginBottom5">
+  <div class="displayFlex marginBottom5">
+    <mat-card class="cardStyle greenColor">
+      <div class="displayGrid">
+        <span>Sanos</span>
+        <span>{{stats?.healthy}}</span>
+      </div>
+    </mat-card>
+    <mat-card class="cardStyle redColor">
+      <div class="displayGrid">
+        <span>Infectados</span>
+        <span>{{stats?.infected}}</span>
+      </div>
+    </mat-card>
+    <mat-card class="cardStyle blueColor">
+      <div class="displayGrid">
+        <span>Inmunes</span>
+        <span>{{stats?.immune}}</span>
+      </div>
+    </mat-card>
+  
+  </div>
+    <ng-container *ngIf="!this.cargando">
+
+
+     
+
+        <section class="filter-section marginBottom5">
+          <mat-card>
+            <mat-form-field appearance="fill">
+              <mat-label>Filtrar por</mat-label>
+              <mat-select [(ngModel)]="selectedFilterValue" >
+                <mat-option *ngFor="let filter of filters" [value]="filter">{{filter}}</mat-option>
+              </mat-select>
+            </mat-form-field>
+            <mat-form-field appearance="fill" *ngIf="selectedFilterValue == 'Pais'">
+              <mat-label>Selecciona el pais</mat-label>
+              <mat-select [formControl]="selectedCountryFilter" multiple >
+  
+                <mat-select-trigger>
+                  {{selectedCountryFilter.value ? selectedCountryFilter.value[0] : ''}}
+                  <span *ngIf="selectedCountryFilter.value?.length > 1" class="example-additional-selection">
+                    (+{{selectedCountryFilter.value.length - 1}} {{selectedCountryFilter.value?.length === 2 ? 'otro' : 'otros'}})
+                  </span>
+                </mat-select-trigger>
+                <mat-option *ngFor="let countryFilter of countryFilters" [value]="countryFilter">{{countryFilter}}</mat-option>
+              </mat-select>
+            </mat-form-field>
+  
+            <mat-form-field appearance="fill" *ngIf="selectedFilterValue == 'Resultado'">
+              <mat-label>Selecciona el resultado</mat-label>
+              <mat-select [formControl]="selectedResultFilter" multiple >
+  
+                <mat-select-trigger>
+                  {{selectedResultFilter.value ? selectedResultFilter.value[0] : ''}}
+                  <span *ngIf="selectedResultFilter.value?.length > 1" class="example-additional-selection">
+                    (+{{selectedResultFilter.value.length - 1}} {{selectedResultFilter.value?.length === 2 ? 'otro' : 'otros'}})
+                  </span>
+                </mat-select-trigger>
+                <mat-option *ngFor="let resultFilter of resultFilters" [value]="resultFilter">{{resultFilter}}</mat-option>
+              </mat-select>
+            </mat-form-field>
+            <button [disabled] = "!selectedFilterValue" mat-button class="buttonPrimary" (click)="filterStudies()"> Aplicar filtros </button>
+  
+
+          </mat-card>
+          
+        </section>
+        <!--<mat-form-field>
+          <mat-label>Buscar</mat-label>
+        <input matInput (keyup)="applyFilter($event)" placeholder="Buscar">
+      </mat-form-field> -->
+      <button mat-button class="buttonPrimary" (click)="cargarAnalisis()"> Cargar Análisis </button>
+
+      <div class="mat-elevation-z8">
+        <table mat-table [dataSource]="dataSource" matSort>
+      
+         
+          <!-- Name Column -->
+          <ng-container matColumnDef="Nombre">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Nombre </th>
+            <td mat-cell *matCellDef="let row"> {{row.name}} </td>
+          </ng-container>
+           <!-- Country Column -->
+           <ng-container matColumnDef="Pais">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Pais </th>
+            <td mat-cell *matCellDef="let row"> {{row.country}}</td>
+          </ng-container>
+           <!-- Result Column -->
+           <ng-container matColumnDef="Resultado">
+            <th  mat-header-cell *matHeaderCellDef mat-sort-header> Resultado </th>
+            <td mat-cell *matCellDef="let row"><span [outerHTML]="row.result | resultToStringPipe"> </span></td>
+          </ng-container>
+          <ng-container matColumnDef="Detalle">
+            <th mat-header-cell *matHeaderCellDef> Detalle </th>
+            <td mat-cell *matCellDef="let row"> 
+              <button mat-icon-button (click)="detailPage(row)" color="primary" matTooltip="Detalle estudio"  matTooltipPosition="right" aria-label="Detalle">
+                <mat-icon>info</mat-icon>
+              </button>
+              
+            </td>
+          </ng-container>
+  
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;">
+          </tr>
+        </table>
+       <!--  <mat-paginator [pageSizeOptions]="[10, 25, 100]"></mat-paginator>-->
+        
+      </div>
+    </ng-container>
+    <div >
+      <ng-container *ngIf="this.cargando">
+        <mat-spinner></mat-spinner>
+      </ng-container>
+    </div>  
+  </div>
+    

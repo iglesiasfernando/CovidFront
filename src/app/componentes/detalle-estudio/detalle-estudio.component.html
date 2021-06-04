@@ -1,0 +1,40 @@
+<mat-card class="w-50">
+    <mat-card-title>Detalle Análisis</mat-card-title>
+    <mat-card-content>
+        <table class="w-50">
+            <tr>
+                <td>ID:</td>
+                <td>{{study._id}}</td>
+            </tr>
+            <tr>
+                <td>Nombre:</td>
+                <td>{{study.name}}</td>
+            </tr>
+            <tr>
+                <td>País:</td>
+                <td>{{study.country}}</td>
+            </tr>
+            <tr>
+                <td>Resultado:</td>
+                <td ><span [outerHTML]="study.result | resultToStringPipe"></span></td>
+            </tr>
+            <tr>
+                <td style="float: left;">ADN:</td>
+                <td>
+                    <ng-container *ngFor="let dnaElement of study.dna">
+                        <div>
+                            {{dnaElement}}
+                        </div>
+                    </ng-container>
+                </td>
+            </tr>
+            <tr>
+                <button type="submit" mat-raised-button (click)="cancel()" >
+                    Volver
+                </button>
+            </tr>
+        </table>
+        
+            
+    </mat-card-content>
+</mat-card>

@@ -1,0 +1,36 @@
+:host{
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+.mat-form-field{
+    width: 100%;
+    min-width: 300px;
+}
+
+mat-card-title,
+mat-card-content{
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+}
+
+button{
+    width: 100%;
+}
+
+.dnaHeight{
+    height: 100px;
+}
+.buttonPrimary{
+    background: #5ba5de;
+    color: white;
+  }
+  .displayFlex {
+    display: flex;
+  }
+
+  .margin5 {
+    margin-right : 5px!important;
+  }
