@@ -12,13 +12,12 @@ import { Globals } from '../global/globals';
 @Injectable({
   providedIn: 'root'
 })
-export class EstudioService {
+export class StudyService {
 
   public static detailStudy: any;
 
   constructor(        
         private http: CustomHttpClient,
-        private servicioHttp: HttpClient
   ) {
    }
 

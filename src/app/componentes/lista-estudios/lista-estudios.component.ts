@@ -6,7 +6,7 @@ import { estudioInterface } from 'src/app/modelos/estudio.interface';
 import { statsInterface } from 'src/app/modelos/stats.interface';
 import {MatSnackBar} from '@angular/material/snack-bar';
 
-import { EstudioService } from 'src/app/servicios/estudio.service';
+import { StudyService } from 'src/app/servicios/estudio.service';
 import { Router } from '@angular/router';
 import {FormControl} from '@angular/forms';
 
@@ -24,7 +24,7 @@ import {FormControl} from '@angular/forms';
     templateUrl: './lista-estudios.component.html',
     styleUrls: ['./lista-estudios.component.css']
   })
-  export class ListaEstudiosComponent implements OnInit {
+  export class StudyListComponent implements OnInit {
   
     displayedColumns: string[] = ['Nombre', 'Pais', 'Resultado', 'Detalle'];
     dataSource: MatTableDataSource<estudioInterface>;
@@ -32,7 +32,7 @@ import {FormControl} from '@angular/forms';
     @ViewChild(MatSort, {static: true}) sort: MatSort;
   
     public studies: estudioInterface[];
-    public cargando: boolean;
+    public loading: boolean;
     public stats: statsInterface;
     filters: string[] = ['Pais', 'Resultado','Ninguno'];
     selectedFilterValue : any;
@@ -44,17 +44,17 @@ import {FormControl} from '@angular/forms';
     selectedResultFilter = new FormControl();
 
     constructor(
-      private servicioEstudio: EstudioService,
-      private servicioRouter: Router,
+      private studyService: StudyService,
+      private routerService: Router,
       private _snackBar: MatSnackBar
     ) {
     }
   
     ngOnInit() {
-      this.cargando = true;
-      this.getUsuarios();
+      this.loading = true;
+      this.getStudies();
       this.getStats();
-      EstudioService.detailStudy = null;
+      StudyService.detailStudy = null;
 
     }
   
@@ -95,8 +95,8 @@ import {FormControl} from '@angular/forms';
     }
 
     detailPage(study){
-      EstudioService.detailStudy = study
-      this.servicioRouter.navigate(['/detalle-analisis']);
+      StudyService.detailStudy = study
+      this.routerService.navigate(['/detalle-analisis']);
     }
     filterStudies(){
       var key = "";
@@ -119,7 +119,7 @@ import {FormControl} from '@angular/forms';
 
       
       if(clean){
-        this.getUsuarios();
+        this.getStudies();
       }
       else{
         if(!values || values.length == 0 ){
@@ -127,17 +127,17 @@ import {FormControl} from '@angular/forms';
 
         }
         else{
-          this.cargando = true;
-          this.servicioEstudio.getFilteredStudies(key,values).subscribe(
+          this.loading = true;
+          this.studyService.getFilteredStudies(key,values).subscribe(
             data => {
               this.studies = data;
               this.setDatatable();
-              this.cargando = false;
+              this.loading = false;
             },
             err => {
               console.log(err);
               let snackBarRef = this._snackBar.open('Ups, ocurrio un error filtrando estudios',"Ok");
-              this.cargando = false;
+              this.loading = false;
   
             }
           )
@@ -147,7 +147,7 @@ import {FormControl} from '@angular/forms';
       
     }
     getStats(){
-      this.servicioEstudio.getStats().subscribe(
+      this.studyService.getStats().subscribe(
         data => {
           this.stats = data;
           this.setDatatable();
@@ -158,23 +158,23 @@ import {FormControl} from '@angular/forms';
         }
       )
     }
-    getUsuarios(){
-      this.servicioEstudio.getStudies().subscribe(
+    getStudies(){
+      this.studyService.getStudies().subscribe(
         data => {
           this.studies = data;
           this.setDatatable();
-          this.cargando = false;
+          this.loading = false;
         },
         err => {
           console.log(err);
-          let snackBarRef = this._snackBar.open('Ups, ocurrio un error cargando estudios',"Ok");
+          let snackBarRef = this._snackBar.open('Ups, ocurrio un error loading estudios',"Ok");
 
-          this.cargando = false;
+          this.loading = false;
         }
       )
     }
-    cargarAnalisis(){
-      this.servicioRouter.navigate(['/nuevo-analisis']);
+    newAnalysis(){
+      this.routerService.navigate(['/nuevo-analisis']);
     }
     getColor(result){
       switch(result){
@@ -193,17 +193,7 @@ import {FormControl} from '@angular/forms';
       this.dataSource.sort = this.sort;
     }
   
-  
-    editPage(idUsuario: string){
-      this.servicioRouter.navigate(['/editarUsuario', idUsuario])
-    }
-  
-    infoPage(idUsuario: string){
-      this.servicioRouter.navigate(['/detalleUsuario', idUsuario])
-    }
-  
-    eliminar(id:string){
-      
-    }
+    
+
   }
   

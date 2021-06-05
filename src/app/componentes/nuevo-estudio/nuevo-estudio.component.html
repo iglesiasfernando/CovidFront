@@ -1,7 +1,7 @@
 <mat-card>
     <mat-card-title>Nuevo Análisis</mat-card-title>
     <mat-card-content>
-        <form [formGroup]="nuevoEstudioForm" (ngSubmit)="nuevoEstudioClick()">
+        <form [formGroup]="newStudyForm" (ngSubmit)="newStudyClick()">
             <p>
                 <mat-form-field>
                     <input type="text" matInput placeholder="Nombre" formControlName="name"> 
@@ -21,7 +21,7 @@
                 <button type="submit" mat-raised-button class="buttonPrimary margin5"  > 
                     Crear
                 </button>
-                <button type="submit" mat-raised-button (click)="cancelar()" >
+                <button type="submit" mat-raised-button (click)="cancel()" >
                     Cancelar
                 </button>
             </div>
