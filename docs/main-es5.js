@@ -90,7 +90,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       component: _componentes_lista_estudios_lista_estudios_component__WEBPACK_IMPORTED_MODULE_2__["ListaEstudiosComponent"]
     }, {
       path: 'nuevo-analisis',
-      component: _componentes_nuevo_estudio_nuevo_estudio_component__WEBPACK_IMPORTED_MODULE_3__["NuevoEstudioComponent"]
+      component: _componentes_nuevo_estudio_nuevo_estudio_component__WEBPACK_IMPORTED_MODULE_3__["NewStudyComponent"]
     }, {
       path: 'detalle-analisis',
       component: _componentes_detalle_estudio_detalle_estudio_component__WEBPACK_IMPORTED_MODULE_4__["DetalleEstudioComponent"]
@@ -428,7 +428,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     (function () {
       (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](AppModule, {
-        declarations: [_pipes_resultToString__WEBPACK_IMPORTED_MODULE_8__["ResultToStringPipe"], _app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"], _componentes_header_header_component__WEBPACK_IMPORTED_MODULE_9__["HeaderComponent"], _componentes_menu_menu_component__WEBPACK_IMPORTED_MODULE_10__["MenuComponent"], _componentes_lista_estudios_lista_estudios_component__WEBPACK_IMPORTED_MODULE_27__["ListaEstudiosComponent"], _componentes_nuevo_estudio_nuevo_estudio_component__WEBPACK_IMPORTED_MODULE_28__["NuevoEstudioComponent"], _componentes_detalle_estudio_detalle_estudio_component__WEBPACK_IMPORTED_MODULE_29__["DetalleEstudioComponent"]],
+        declarations: [_pipes_resultToString__WEBPACK_IMPORTED_MODULE_8__["ResultToStringPipe"], _app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"], _componentes_header_header_component__WEBPACK_IMPORTED_MODULE_9__["HeaderComponent"], _componentes_menu_menu_component__WEBPACK_IMPORTED_MODULE_10__["MenuComponent"], _componentes_lista_estudios_lista_estudios_component__WEBPACK_IMPORTED_MODULE_27__["ListaEstudiosComponent"], _componentes_nuevo_estudio_nuevo_estudio_component__WEBPACK_IMPORTED_MODULE_28__["NewStudyComponent"], _componentes_detalle_estudio_detalle_estudio_component__WEBPACK_IMPORTED_MODULE_29__["DetalleEstudioComponent"]],
         imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_4__["AppRoutingModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_6__["BrowserAnimationsModule"], _angular_material_slider__WEBPACK_IMPORTED_MODULE_22__["MatSliderModule"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_11__["MatToolbarModule"], _angular_material_table__WEBPACK_IMPORTED_MODULE_12__["MatTableModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_13__["MatInputModule"], _angular_material_paginator__WEBPACK_IMPORTED_MODULE_14__["MatPaginatorModule"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_15__["MatSidenavModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_16__["MatIconModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_17__["MatListModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_18__["MatButtonModule"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_19__["MatTooltipModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_20__["MatCardModule"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_21__["MatFormFieldModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["ReactiveFormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"], _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_23__["MatProgressSpinnerModule"], _angular_material_select__WEBPACK_IMPORTED_MODULE_24__["MatSelectModule"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_25__["MatDividerModule"], _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_26__["MatSnackBarModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"]]
       });
     })();
@@ -439,7 +439,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AppModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
         args: [{
-          declarations: [_pipes_resultToString__WEBPACK_IMPORTED_MODULE_8__["ResultToStringPipe"], _app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"], _componentes_header_header_component__WEBPACK_IMPORTED_MODULE_9__["HeaderComponent"], _componentes_menu_menu_component__WEBPACK_IMPORTED_MODULE_10__["MenuComponent"], _componentes_lista_estudios_lista_estudios_component__WEBPACK_IMPORTED_MODULE_27__["ListaEstudiosComponent"], _componentes_nuevo_estudio_nuevo_estudio_component__WEBPACK_IMPORTED_MODULE_28__["NuevoEstudioComponent"], _componentes_detalle_estudio_detalle_estudio_component__WEBPACK_IMPORTED_MODULE_29__["DetalleEstudioComponent"]],
+          declarations: [_pipes_resultToString__WEBPACK_IMPORTED_MODULE_8__["ResultToStringPipe"], _app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"], _componentes_header_header_component__WEBPACK_IMPORTED_MODULE_9__["HeaderComponent"], _componentes_menu_menu_component__WEBPACK_IMPORTED_MODULE_10__["MenuComponent"], _componentes_lista_estudios_lista_estudios_component__WEBPACK_IMPORTED_MODULE_27__["ListaEstudiosComponent"], _componentes_nuevo_estudio_nuevo_estudio_component__WEBPACK_IMPORTED_MODULE_28__["NewStudyComponent"], _componentes_detalle_estudio_detalle_estudio_component__WEBPACK_IMPORTED_MODULE_29__["DetalleEstudioComponent"]],
           imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_4__["AppRoutingModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_6__["BrowserAnimationsModule"], _angular_material_slider__WEBPACK_IMPORTED_MODULE_22__["MatSliderModule"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_11__["MatToolbarModule"], _angular_material_table__WEBPACK_IMPORTED_MODULE_12__["MatTableModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_13__["MatInputModule"], _angular_material_paginator__WEBPACK_IMPORTED_MODULE_14__["MatPaginatorModule"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_15__["MatSidenavModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_16__["MatIconModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_17__["MatListModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_18__["MatButtonModule"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_19__["MatTooltipModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_20__["MatCardModule"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_21__["MatFormFieldModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["ReactiveFormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"], _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_23__["MatProgressSpinnerModule"], _angular_material_select__WEBPACK_IMPORTED_MODULE_24__["MatSelectModule"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_25__["MatDividerModule"], _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_26__["MatSnackBarModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"]],
           providers: [_servicios_http_client_service__WEBPACK_IMPORTED_MODULE_3__["CustomHttpClient"]],
           bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
@@ -535,26 +535,26 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     }
 
     var DetalleEstudioComponent = /*#__PURE__*/function () {
-      function DetalleEstudioComponent(servicioRouter, servicioEstudio) {
+      function DetalleEstudioComponent(routerService, studyService) {
         _classCallCheck(this, DetalleEstudioComponent);
 
-        this.servicioRouter = servicioRouter;
-        this.servicioEstudio = servicioEstudio;
+        this.routerService = routerService;
+        this.studyService = studyService;
       }
 
       _createClass(DetalleEstudioComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          if (!src_app_servicios_estudio_service__WEBPACK_IMPORTED_MODULE_1__["EstudioService"].detailStudy) {
+          if (!src_app_servicios_estudio_service__WEBPACK_IMPORTED_MODULE_1__["StudyService"].detailStudy) {
             this.cancel();
           } else {
-            this.study = src_app_servicios_estudio_service__WEBPACK_IMPORTED_MODULE_1__["EstudioService"].detailStudy;
+            this.study = src_app_servicios_estudio_service__WEBPACK_IMPORTED_MODULE_1__["StudyService"].detailStudy;
           }
         }
       }, {
         key: "cancel",
         value: function cancel() {
-          this.servicioRouter.navigate(["/lista-analisis"]);
+          this.routerService.navigate(["/lista-analisis"]);
         }
       }]);
 
@@ -562,7 +562,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     }();
 
     DetalleEstudioComponent.ɵfac = function DetalleEstudioComponent_Factory(t) {
-      return new (t || DetalleEstudioComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_servicios_estudio_service__WEBPACK_IMPORTED_MODULE_1__["EstudioService"]));
+      return new (t || DetalleEstudioComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_servicios_estudio_service__WEBPACK_IMPORTED_MODULE_1__["StudyService"]));
     };
 
     DetalleEstudioComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
@@ -728,7 +728,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         return [{
           type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]
         }, {
-          type: src_app_servicios_estudio_service__WEBPACK_IMPORTED_MODULE_1__["EstudioService"]
+          type: src_app_servicios_estudio_service__WEBPACK_IMPORTED_MODULE_1__["StudyService"]
         }];
       }, null);
     })();
@@ -1350,7 +1350,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           var ctx_r32 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
 
-          return ctx_r32.cargarAnalisis();
+          return ctx_r32.newAnalysis();
         });
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13, " Cargar An\xE1lisis ");
@@ -1452,11 +1452,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     }
 
     var ListaEstudiosComponent = /*#__PURE__*/function () {
-      function ListaEstudiosComponent(servicioEstudio, servicioRouter, _snackBar) {
+      function ListaEstudiosComponent(studyService, routerService, _snackBar) {
         _classCallCheck(this, ListaEstudiosComponent);
 
-        this.servicioEstudio = servicioEstudio;
-        this.servicioRouter = servicioRouter;
+        this.studyService = studyService;
+        this.routerService = routerService;
         this._snackBar = _snackBar;
         this.displayedColumns = ['Nombre', 'Pais', 'Resultado', 'Detalle'];
         this.filters = ['Pais', 'Resultado', 'Ninguno'];
@@ -1469,10 +1469,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(ListaEstudiosComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          this.cargando = true;
+          this.loading = true;
           this.getUsuarios();
           this.getStats();
-          src_app_servicios_estudio_service__WEBPACK_IMPORTED_MODULE_4__["EstudioService"].detailStudy = null;
+          src_app_servicios_estudio_service__WEBPACK_IMPORTED_MODULE_4__["StudyService"].detailStudy = null;
         }
       }, {
         key: "applyFilter",
@@ -1516,8 +1516,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "detailPage",
         value: function detailPage(study) {
-          src_app_servicios_estudio_service__WEBPACK_IMPORTED_MODULE_4__["EstudioService"].detailStudy = study;
-          this.servicioRouter.navigate(['/detalle-analisis']);
+          src_app_servicios_estudio_service__WEBPACK_IMPORTED_MODULE_4__["StudyService"].detailStudy = study;
+          this.routerService.navigate(['/detalle-analisis']);
         }
       }, {
         key: "filterStudies",
@@ -1550,19 +1550,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             if (!values || values.length == 0) {
               var snackBarRef = this._snackBar.open('Selecciona un criterio de filtro', "Ok");
             } else {
-              this.cargando = true;
-              this.servicioEstudio.getFilteredStudies(key, values).subscribe(function (data) {
+              this.loading = true;
+              this.studyService.getFilteredStudies(key, values).subscribe(function (data) {
                 _this.studies = data;
 
                 _this.setDatatable();
 
-                _this.cargando = false;
+                _this.loading = false;
               }, function (err) {
                 console.log(err);
 
                 var snackBarRef = _this._snackBar.open('Ups, ocurrio un error filtrando estudios', "Ok");
 
-                _this.cargando = false;
+                _this.loading = false;
               });
             }
           }
@@ -1572,7 +1572,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function getStats() {
           var _this2 = this;
 
-          this.servicioEstudio.getStats().subscribe(function (data) {
+          this.studyService.getStats().subscribe(function (data) {
             _this2.stats = data;
 
             _this2.setDatatable();
@@ -1585,24 +1585,24 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function getUsuarios() {
           var _this3 = this;
 
-          this.servicioEstudio.getStudies().subscribe(function (data) {
+          this.studyService.getStudies().subscribe(function (data) {
             _this3.studies = data;
 
             _this3.setDatatable();
 
-            _this3.cargando = false;
+            _this3.loading = false;
           }, function (err) {
             console.log(err);
 
-            var snackBarRef = _this3._snackBar.open('Ups, ocurrio un error cargando estudios', "Ok");
+            var snackBarRef = _this3._snackBar.open('Ups, ocurrio un error loading estudios', "Ok");
 
-            _this3.cargando = false;
+            _this3.loading = false;
           });
         }
       }, {
         key: "cargarAnalisis",
-        value: function cargarAnalisis() {
-          this.servicioRouter.navigate(['/nuevo-analisis']);
+        value: function newAnalysis() {
+          this.routerService.navigate(['/nuevo-analisis']);
         }
       }, {
         key: "getColor",
@@ -1630,12 +1630,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "editPage",
         value: function editPage(idUsuario) {
-          this.servicioRouter.navigate(['/editarUsuario', idUsuario]);
+          this.routerService.navigate(['/editarUsuario', idUsuario]);
         }
       }, {
         key: "infoPage",
         value: function infoPage(idUsuario) {
-          this.servicioRouter.navigate(['/detalleUsuario', idUsuario]);
+          this.routerService.navigate(['/detalleUsuario', idUsuario]);
         }
       }, {
         key: "eliminar",
@@ -1646,7 +1646,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     }();
 
     ListaEstudiosComponent.ɵfac = function ListaEstudiosComponent_Factory(t) {
-      return new (t || ListaEstudiosComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_servicios_estudio_service__WEBPACK_IMPORTED_MODULE_4__["EstudioService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_7__["MatSnackBar"]));
+      return new (t || ListaEstudiosComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_servicios_estudio_service__WEBPACK_IMPORTED_MODULE_4__["StudyService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_7__["MatSnackBar"]));
     };
 
     ListaEstudiosComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
@@ -1763,11 +1763,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", !ctx.cargando);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", !ctx.loading);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.cargando);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.loading);
         }
       },
       directives: [_angular_material_card__WEBPACK_IMPORTED_MODULE_8__["MatCard"], _angular_common__WEBPACK_IMPORTED_MODULE_9__["NgIf"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_10__["MatFormField"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_10__["MatLabel"], _angular_material_select__WEBPACK_IMPORTED_MODULE_11__["MatSelect"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgModel"], _angular_common__WEBPACK_IMPORTED_MODULE_9__["NgForOf"], _angular_material_button__WEBPACK_IMPORTED_MODULE_12__["MatButton"], _angular_material_table__WEBPACK_IMPORTED_MODULE_3__["MatTable"], _angular_material_table__WEBPACK_IMPORTED_MODULE_3__["MatColumnDef"], _angular_material_table__WEBPACK_IMPORTED_MODULE_3__["MatHeaderCellDef"], _angular_material_table__WEBPACK_IMPORTED_MODULE_3__["MatCellDef"], _angular_material_table__WEBPACK_IMPORTED_MODULE_3__["MatHeaderRowDef"], _angular_material_table__WEBPACK_IMPORTED_MODULE_3__["MatRowDef"], _angular_material_core__WEBPACK_IMPORTED_MODULE_13__["MatOption"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormControlDirective"], _angular_material_select__WEBPACK_IMPORTED_MODULE_11__["MatSelectTrigger"], _angular_material_table__WEBPACK_IMPORTED_MODULE_3__["MatHeaderCell"], _angular_material_table__WEBPACK_IMPORTED_MODULE_3__["MatCell"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_14__["MatTooltip"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_15__["MatIcon"], _angular_material_table__WEBPACK_IMPORTED_MODULE_3__["MatHeaderRow"], _angular_material_table__WEBPACK_IMPORTED_MODULE_3__["MatRow"], _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_16__["MatSpinner"]],
@@ -1786,7 +1786,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }]
       }], function () {
         return [{
-          type: src_app_servicios_estudio_service__WEBPACK_IMPORTED_MODULE_4__["EstudioService"]
+          type: src_app_servicios_estudio_service__WEBPACK_IMPORTED_MODULE_4__["StudyService"]
         }, {
           type: _angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"]
         }, {
@@ -1968,10 +1968,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     }
 
     var MenuComponent = /*#__PURE__*/function () {
-      function MenuComponent(changeDetectorRef, media, serviciorouter) {
+      function MenuComponent(changeDetectorRef, media, routerService) {
         _classCallCheck(this, MenuComponent);
 
-        this.serviciorouter = serviciorouter; //fillerNav = Array.from({length: 50}, (_, i) => `Nav Item ${i + 1}`);
+        this.routerService = routerService; //fillerNav = Array.from({length: 50}, (_, i) => `Nav Item ${i + 1}`);
 
         this.fillerNav = [{
           name: "Usuarios",
@@ -2058,18 +2058,18 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     !*** ./src/app/componentes/nuevo-estudio/nuevo-estudio.component.ts ***!
     \**********************************************************************/
 
-  /*! exports provided: NuevoEstudioComponent */
+  /*! exports provided: NewStudyComponent */
 
   /***/
-  function srcAppComponentesNuevoEstudioNuevoEstudioComponentTs(module, __webpack_exports__, __webpack_require__) {
+  function srcAppComponentesNuevoEstudioNewStudyComponentTs(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony export (binding) */
 
 
-    __webpack_require__.d(__webpack_exports__, "NuevoEstudioComponent", function () {
-      return NuevoEstudioComponent;
+    __webpack_require__.d(__webpack_exports__, "NewStudyComponent", function () {
+      return NewStudyComponent;
     });
     /* harmony import */
 
@@ -2126,22 +2126,22 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /*! @angular/material/button */
     "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/button.js");
 
-    var NuevoEstudioComponent = /*#__PURE__*/function () {
-      function NuevoEstudioComponent(servicioStudy, servicioRouter, _snackBar) {
-        _classCallCheck(this, NuevoEstudioComponent);
+    var NewStudyComponent = /*#__PURE__*/function () {
+      function NewStudyComponent(studyService, routerService, _snackBar) {
+        _classCallCheck(this, NewStudyComponent);
 
-        this.servicioStudy = servicioStudy;
-        this.servicioRouter = servicioRouter;
+        this.studyService = studyService;
+        this.routerService = routerService;
         this._snackBar = _snackBar;
         this.dnaAllowed = ["C", "T", "G", "A", "\n"];
-        this.nuevoEstudioForm = new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormGroup"]({
+        this.newStudyForm = new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormGroup"]({
           name: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]('', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required),
           country: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]('', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required),
           dna: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]('', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required)
         });
       }
 
-      _createClass(NuevoEstudioComponent, [{
+      _createClass(NewStudyComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {}
       }, {
@@ -2149,19 +2149,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function dnaTextChanged() {
           var _this4 = this;
 
-          //var formatAdn = this.getFormattedAdn(this.nuevoEstudioForm.controls.adn.value);
-          Array.from(this.nuevoEstudioForm.controls.dna.value).forEach(function (element) {
+          //var formatAdn = this.getFormattedAdn(this.newStudyForm.controls.adn.value);
+          Array.from(this.newStudyForm.controls.dna.value).forEach(function (element) {
             if (!_this4.dnaAllowed.includes(element.toUpperCase())) {
-              _this4.nuevoEstudioForm.patchValue({
-                dna: _this4.nuevoEstudioForm.controls.dna.value.replaceAll(element, "")
+              _this4.newStudyForm.patchValue({
+                dna: _this4.newStudyForm.controls.dna.value.replaceAll(element, "")
               });
             }
           });
         }
       }, {
         key: "cancelar",
-        value: function cancelar() {
-          this.servicioRouter.navigate(["/lista-analisis"]);
+        value: function cancel() {
+          this.routerService.navigate(["/lista-analisis"]);
         }
         /**
          * @param dna string de NxN posiciones, previamente validado
@@ -2186,23 +2186,23 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }
       }, {
         key: "nuevoEstudioClick",
-        value: function nuevoEstudioClick() {
+        value: function newStudyClick() {
           var _this5 = this;
 
-          var dna = this.nuevoEstudioForm.controls.dna.value.trim().split("\n");
+          var dna = this.newStudyForm.controls.dna.value.trim().split("\n");
 
           if (!this.validateDna(dna)) {
             var snackBarRef = this._snackBar.open('El dna no tiene el formato NxN', "Ok");
           } else {
             var study = {
-              name: this.nuevoEstudioForm.controls.name.value,
-              country: this.nuevoEstudioForm.controls.country.value,
+              name: this.newStudyForm.controls.name.value,
+              country: this.newStudyForm.controls.country.value,
               dna: dna
             };
-            this.servicioStudy.insertStudy(study).subscribe(function (data) {
+            this.studyService.insertStudy(study).subscribe(function (data) {
               var snackBarRef = _this5._snackBar.open('Caso cargado', "Ok");
 
-              _this5.servicioRouter.navigate(["/lista-analisis"]);
+              _this5.routerService.navigate(["/lista-analisis"]);
             }, function (err) {
               console.log(err);
 
@@ -2212,20 +2212,20 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }
       }]);
 
-      return NuevoEstudioComponent;
+      return NewStudyComponent;
     }();
 
-    NuevoEstudioComponent.ɵfac = function NuevoEstudioComponent_Factory(t) {
-      return new (t || NuevoEstudioComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_servicios_estudio_service__WEBPACK_IMPORTED_MODULE_2__["EstudioService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_4__["MatSnackBar"]));
+    NewStudyComponent.ɵfac = function NewStudyComponent_Factory(t) {
+      return new (t || NewStudyComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_servicios_estudio_service__WEBPACK_IMPORTED_MODULE_2__["StudyService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_4__["MatSnackBar"]));
     };
 
-    NuevoEstudioComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
-      type: NuevoEstudioComponent,
+    NewStudyComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+      type: NewStudyComponent,
       selectors: [["app-nuevo-estudio"]],
       decls: 20,
       vars: 1,
       consts: [[3, "formGroup", "ngSubmit"], ["type", "text", "matInput", "", "placeholder", "Nombre", "formControlName", "name"], ["matInput", "", "placeholder", "Pa\xEDs", "formControlName", "country"], ["id", "dna", "name", "dna", "matInput", "", "placeholder", "Adn", "formControlName", "dna", 1, "dnaHeight", 3, "input"], [1, "displayFlex"], ["type", "submit", "mat-raised-button", "", 1, "buttonPrimary", "margin5"], ["type", "submit", "mat-raised-button", "", 3, "click"]],
-      template: function NuevoEstudioComponent_Template(rf, ctx) {
+      template: function NewStudyComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-card");
 
@@ -2239,8 +2239,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "form", 0);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngSubmit", function NuevoEstudioComponent_Template_form_ngSubmit_4_listener() {
-            return ctx.nuevoEstudioClick();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngSubmit", function NewStudyComponent_Template_form_ngSubmit_4_listener() {
+            return ctx.newStudyClick();
           });
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "p");
@@ -2269,7 +2269,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "textarea", 3);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("input", function NuevoEstudioComponent_Template_textarea_input_13_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("input", function NewStudyComponent_Template_textarea_input_13_listener() {
             return ctx.dnaTextChanged();
           });
 
@@ -2291,8 +2291,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "button", 6);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function NuevoEstudioComponent_Template_button_click_18_listener() {
-            return ctx.cancelar();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function NewStudyComponent_Template_button_click_18_listener() {
+            return ctx.cancel();
           });
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](19, " Cancelar ");
@@ -2311,7 +2311,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         if (rf & 2) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("formGroup", ctx.nuevoEstudioForm);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("formGroup", ctx.newStudyForm);
         }
       },
       directives: [_angular_material_card__WEBPACK_IMPORTED_MODULE_5__["MatCard"], _angular_material_card__WEBPACK_IMPORTED_MODULE_5__["MatCardTitle"], _angular_material_card__WEBPACK_IMPORTED_MODULE_5__["MatCardContent"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["ɵangular_packages_forms_forms_y"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgControlStatusGroup"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormGroupDirective"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_6__["MatFormField"], _angular_material_input__WEBPACK_IMPORTED_MODULE_7__["MatInput"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControlName"], _angular_material_button__WEBPACK_IMPORTED_MODULE_8__["MatButton"]],
@@ -2320,7 +2320,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /*@__PURE__*/
 
     (function () {
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NuevoEstudioComponent, [{
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NewStudyComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
           selector: 'app-nuevo-estudio',
@@ -2329,7 +2329,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }]
       }], function () {
         return [{
-          type: src_app_servicios_estudio_service__WEBPACK_IMPORTED_MODULE_2__["EstudioService"]
+          type: src_app_servicios_estudio_service__WEBPACK_IMPORTED_MODULE_2__["StudyService"]
         }, {
           type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]
         }, {
@@ -2490,18 +2490,18 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     !*** ./src/app/servicios/estudio.service.ts ***!
     \**********************************************/
 
-  /*! exports provided: EstudioService */
+  /*! exports provided: StudyService */
 
   /***/
-  function srcAppServiciosEstudioServiceTs(module, __webpack_exports__, __webpack_require__) {
+  function srcAppServiciosStudyServiceTs(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony export (binding) */
 
 
-    __webpack_require__.d(__webpack_exports__, "EstudioService", function () {
-      return EstudioService;
+    __webpack_require__.d(__webpack_exports__, "StudyService", function () {
+      return StudyService;
     });
     /* harmony import */
 
@@ -2534,15 +2534,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /*! @angular/common/http */
     "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/http.js");
 
-    var EstudioService = /*#__PURE__*/function () {
-      function EstudioService(http, servicioHttp) {
-        _classCallCheck(this, EstudioService);
+    var StudyService = /*#__PURE__*/function () {
+      function StudyService(http, servicioHttp) {
+        _classCallCheck(this, StudyService);
 
         this.http = http;
         this.servicioHttp = servicioHttp;
       }
 
-      _createClass(EstudioService, [{
+      _createClass(StudyService, [{
         key: "insertStudy",
         value: function insertStudy(study) {
           var body = study;
@@ -2587,22 +2587,22 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }
       }]);
 
-      return EstudioService;
+      return StudyService;
     }();
 
-    EstudioService.ɵfac = function EstudioService_Factory(t) {
-      return new (t || EstudioService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_http_client_service__WEBPACK_IMPORTED_MODULE_3__["CustomHttpClient"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClient"]));
+    StudyService.ɵfac = function StudyService_Factory(t) {
+      return new (t || StudyService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_http_client_service__WEBPACK_IMPORTED_MODULE_3__["CustomHttpClient"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClient"]));
     };
 
-    EstudioService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
-      token: EstudioService,
-      factory: EstudioService.ɵfac,
+    StudyService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
+      token: StudyService,
+      factory: StudyService.ɵfac,
       providedIn: 'root'
     });
     /*@__PURE__*/
 
     (function () {
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](EstudioService, [{
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](StudyService, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
         args: [{
           providedIn: 'root'

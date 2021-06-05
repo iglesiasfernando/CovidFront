@@ -33,7 +33,7 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { ListaEstudiosComponent } from './componentes/lista-estudios/lista-estudios.component';
-import { NuevoEstudioComponent } from './componentes/nuevo-estudio/nuevo-estudio.component';
+import { NewStudyComponent } from './componentes/nuevo-estudio/nuevo-estudio.component';
 import { DetalleEstudioComponent } from './componentes/detalle-estudio/detalle-estudio.component';
 
 
@@ -54,7 +54,7 @@ import { DetalleEstudioComponent } from './componentes/detalle-estudio/detalle-e
     HeaderComponent,
     MenuComponent,
     ListaEstudiosComponent,
-    NuevoEstudioComponent,
+    NewStudyComponent,
     DetalleEstudioComponent
   ],
   imports: [

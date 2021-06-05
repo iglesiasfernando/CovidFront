@@ -3,7 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { DetalleEstudioComponent } from './detalle-estudio.component';
 import { Router,Route } from '@angular/router';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { EstudioService } from 'src/app/servicios/estudio.service';
+import { StudyService } from 'src/app/servicios/estudio.service';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 
 describe('DetalleEstudioComponent', () => {
@@ -11,12 +11,12 @@ describe('DetalleEstudioComponent', () => {
   let fixture: ComponentFixture<DetalleEstudioComponent>;
 
   beforeEach(async(() => {
-    let service: EstudioService;
+    let service: StudyService;
 
-    const serviceMock = jasmine.createSpyObj('EstudioService');
+    const serviceMock = jasmine.createSpyObj('StudyService');
     TestBed.configureTestingModule({
       declarations: [ DetalleEstudioComponent],
-      providers: [Router,{ provide: EstudioService, useValue: serviceMock }],
+      providers: [Router,{ provide: StudyService, useValue: serviceMock }],
      
       imports : [HttpClientTestingModule],
       

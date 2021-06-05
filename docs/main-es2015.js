@@ -49,7 +49,7 @@ const routes = [
     { path: 'lista-analisis',
         component: _componentes_lista_estudios_lista_estudios_component__WEBPACK_IMPORTED_MODULE_2__["ListaEstudiosComponent"] },
     { path: 'nuevo-analisis',
-        component: _componentes_nuevo_estudio_nuevo_estudio_component__WEBPACK_IMPORTED_MODULE_3__["NuevoEstudioComponent"] },
+        component: _componentes_nuevo_estudio_nuevo_estudio_component__WEBPACK_IMPORTED_MODULE_3__["NewStudyComponent"] },
     { path: 'detalle-analisis',
         component: _componentes_detalle_estudio_detalle_estudio_component__WEBPACK_IMPORTED_MODULE_4__["DetalleEstudioComponent"] }
 ];
@@ -214,7 +214,7 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
         _componentes_header_header_component__WEBPACK_IMPORTED_MODULE_9__["HeaderComponent"],
         _componentes_menu_menu_component__WEBPACK_IMPORTED_MODULE_10__["MenuComponent"],
         _componentes_lista_estudios_lista_estudios_component__WEBPACK_IMPORTED_MODULE_27__["ListaEstudiosComponent"],
-        _componentes_nuevo_estudio_nuevo_estudio_component__WEBPACK_IMPORTED_MODULE_28__["NuevoEstudioComponent"],
+        _componentes_nuevo_estudio_nuevo_estudio_component__WEBPACK_IMPORTED_MODULE_28__["NewStudyComponent"],
         _componentes_detalle_estudio_detalle_estudio_component__WEBPACK_IMPORTED_MODULE_29__["DetalleEstudioComponent"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
         _app_routing_module__WEBPACK_IMPORTED_MODULE_4__["AppRoutingModule"],
         _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_6__["BrowserAnimationsModule"],
@@ -247,7 +247,7 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
                     _componentes_header_header_component__WEBPACK_IMPORTED_MODULE_9__["HeaderComponent"],
                     _componentes_menu_menu_component__WEBPACK_IMPORTED_MODULE_10__["MenuComponent"],
                     _componentes_lista_estudios_lista_estudios_component__WEBPACK_IMPORTED_MODULE_27__["ListaEstudiosComponent"],
-                    _componentes_nuevo_estudio_nuevo_estudio_component__WEBPACK_IMPORTED_MODULE_28__["NuevoEstudioComponent"],
+                    _componentes_nuevo_estudio_nuevo_estudio_component__WEBPACK_IMPORTED_MODULE_28__["NewStudyComponent"],
                     _componentes_detalle_estudio_detalle_estudio_component__WEBPACK_IMPORTED_MODULE_29__["DetalleEstudioComponent"]
                 ],
                 imports: [
@@ -321,23 +321,23 @@ function DetalleEstudioComponent_ng_container_30_Template(rf, ctx) { if (rf & 1)
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", dnaElement_r1, " ");
 } }
 class DetalleEstudioComponent {
-    constructor(servicioRouter, servicioEstudio) {
-        this.servicioRouter = servicioRouter;
-        this.servicioEstudio = servicioEstudio;
+    constructor(routerService, studyService) {
+        this.routerService = routerService;
+        this.studyService = studyService;
     }
     ngOnInit() {
-        if (!src_app_servicios_estudio_service__WEBPACK_IMPORTED_MODULE_1__["EstudioService"].detailStudy) {
+        if (!src_app_servicios_estudio_service__WEBPACK_IMPORTED_MODULE_1__["StudyService"].detailStudy) {
             this.cancel();
         }
         else {
-            this.study = src_app_servicios_estudio_service__WEBPACK_IMPORTED_MODULE_1__["EstudioService"].detailStudy;
+            this.study = src_app_servicios_estudio_service__WEBPACK_IMPORTED_MODULE_1__["StudyService"].detailStudy;
         }
     }
     cancel() {
-        this.servicioRouter.navigate(["/lista-analisis"]);
+        this.routerService.navigate(["/lista-analisis"]);
     }
 }
-DetalleEstudioComponent.ɵfac = function DetalleEstudioComponent_Factory(t) { return new (t || DetalleEstudioComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_servicios_estudio_service__WEBPACK_IMPORTED_MODULE_1__["EstudioService"])); };
+DetalleEstudioComponent.ɵfac = function DetalleEstudioComponent_Factory(t) { return new (t || DetalleEstudioComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_servicios_estudio_service__WEBPACK_IMPORTED_MODULE_1__["StudyService"])); };
 DetalleEstudioComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: DetalleEstudioComponent, selectors: [["app-detalle-estudio"]], decls: 34, vars: 7, consts: [[1, "w-50"], [3, "outerHTML"], [2, "float", "left"], [4, "ngFor", "ngForOf"], ["type", "submit", "mat-raised-button", "", 3, "click"]], template: function DetalleEstudioComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-card", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "mat-card-title");
@@ -414,7 +414,7 @@ DetalleEstudioComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵ
                 templateUrl: './detalle-estudio.component.html',
                 styleUrls: ['./detalle-estudio.component.css']
             }]
-    }], function () { return [{ type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] }, { type: src_app_servicios_estudio_service__WEBPACK_IMPORTED_MODULE_1__["EstudioService"] }]; }, null); })();
+    }], function () { return [{ type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] }, { type: src_app_servicios_estudio_service__WEBPACK_IMPORTED_MODULE_1__["StudyService"] }]; }, null); })();
 
 
 /***/ }),
@@ -695,7 +695,7 @@ function ListaEstudiosComponent_ng_container_20_Template(rf, ctx) { if (rf & 1) 
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "button", 13);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function ListaEstudiosComponent_ng_container_20_Template_button_click_12_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r30); const ctx_r32 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r32.cargarAnalisis(); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function ListaEstudiosComponent_ng_container_20_Template_button_click_12_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r30); const ctx_r32 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r32.newAnalysis(); });
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13, " Cargar An\u00E1lisis ");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "div", 14);
@@ -746,9 +746,9 @@ function ListaEstudiosComponent_ng_container_22_Template(rf, ctx) { if (rf & 1) 
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
 } }
 class ListaEstudiosComponent {
-    constructor(servicioEstudio, servicioRouter, _snackBar) {
-        this.servicioEstudio = servicioEstudio;
-        this.servicioRouter = servicioRouter;
+    constructor(studyService, routerService, _snackBar) {
+        this.studyService = studyService;
+        this.routerService = routerService;
         this._snackBar = _snackBar;
         this.displayedColumns = ['Nombre', 'Pais', 'Resultado', 'Detalle'];
         this.filters = ['Pais', 'Resultado', 'Ninguno'];
@@ -758,10 +758,10 @@ class ListaEstudiosComponent {
         this.selectedResultFilter = new _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormControl"]();
     }
     ngOnInit() {
-        this.cargando = true;
+        this.loading = true;
         this.getUsuarios();
         this.getStats();
-        src_app_servicios_estudio_service__WEBPACK_IMPORTED_MODULE_4__["EstudioService"].detailStudy = null;
+        src_app_servicios_estudio_service__WEBPACK_IMPORTED_MODULE_4__["StudyService"].detailStudy = null;
     }
     applyFilter(event) {
         const filterValue = event.target.value;
@@ -794,8 +794,8 @@ class ListaEstudiosComponent {
         return resultFilterArray;
     }
     detailPage(study) {
-        src_app_servicios_estudio_service__WEBPACK_IMPORTED_MODULE_4__["EstudioService"].detailStudy = study;
-        this.servicioRouter.navigate(['/detalle-analisis']);
+        src_app_servicios_estudio_service__WEBPACK_IMPORTED_MODULE_4__["StudyService"].detailStudy = study;
+        this.routerService.navigate(['/detalle-analisis']);
     }
     filterStudies() {
         var key = "";
@@ -822,21 +822,21 @@ class ListaEstudiosComponent {
                 let snackBarRef = this._snackBar.open('Selecciona un criterio de filtro', "Ok");
             }
             else {
-                this.cargando = true;
-                this.servicioEstudio.getFilteredStudies(key, values).subscribe(data => {
+                this.loading = true;
+                this.studyService.getFilteredStudies(key, values).subscribe(data => {
                     this.studies = data;
                     this.setDatatable();
-                    this.cargando = false;
+                    this.loading = false;
                 }, err => {
                     console.log(err);
                     let snackBarRef = this._snackBar.open('Ups, ocurrio un error filtrando estudios', "Ok");
-                    this.cargando = false;
+                    this.loading = false;
                 });
             }
         }
     }
     getStats() {
-        this.servicioEstudio.getStats().subscribe(data => {
+        this.studyService.getStats().subscribe(data => {
             this.stats = data;
             this.setDatatable();
         }, err => {
@@ -844,18 +844,18 @@ class ListaEstudiosComponent {
         });
     }
     getUsuarios() {
-        this.servicioEstudio.getStudies().subscribe(data => {
+        this.studyService.getStudies().subscribe(data => {
             this.studies = data;
             this.setDatatable();
-            this.cargando = false;
+            this.loading = false;
         }, err => {
             console.log(err);
-            let snackBarRef = this._snackBar.open('Ups, ocurrio un error cargando estudios', "Ok");
-            this.cargando = false;
+            let snackBarRef = this._snackBar.open('Ups, ocurrio un error loading estudios', "Ok");
+            this.loading = false;
         });
     }
-    cargarAnalisis() {
-        this.servicioRouter.navigate(['/nuevo-analisis']);
+    newAnalysis() {
+        this.routerService.navigate(['/nuevo-analisis']);
     }
     getColor(result) {
         switch (result) {
@@ -874,15 +874,15 @@ class ListaEstudiosComponent {
         this.dataSource.sort = this.sort;
     }
     editPage(idUsuario) {
-        this.servicioRouter.navigate(['/editarUsuario', idUsuario]);
+        this.routerService.navigate(['/editarUsuario', idUsuario]);
     }
     infoPage(idUsuario) {
-        this.servicioRouter.navigate(['/detalleUsuario', idUsuario]);
+        this.routerService.navigate(['/detalleUsuario', idUsuario]);
     }
     eliminar(id) {
     }
 }
-ListaEstudiosComponent.ɵfac = function ListaEstudiosComponent_Factory(t) { return new (t || ListaEstudiosComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_servicios_estudio_service__WEBPACK_IMPORTED_MODULE_4__["EstudioService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_7__["MatSnackBar"])); };
+ListaEstudiosComponent.ɵfac = function ListaEstudiosComponent_Factory(t) { return new (t || ListaEstudiosComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_servicios_estudio_service__WEBPACK_IMPORTED_MODULE_4__["StudyService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_7__["MatSnackBar"])); };
 ListaEstudiosComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ListaEstudiosComponent, selectors: [["app-lista-estudios"]], viewQuery: function ListaEstudiosComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵstaticViewQuery"](_angular_material_paginator__WEBPACK_IMPORTED_MODULE_1__["MatPaginator"], true);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵstaticViewQuery"](_angular_material_sort__WEBPACK_IMPORTED_MODULE_2__["MatSort"], true);
@@ -937,9 +937,9 @@ ListaEstudiosComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵd
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.stats == null ? null : ctx.stats.immune);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", !ctx.cargando);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", !ctx.loading);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.cargando);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.loading);
     } }, directives: [_angular_material_card__WEBPACK_IMPORTED_MODULE_8__["MatCard"], _angular_common__WEBPACK_IMPORTED_MODULE_9__["NgIf"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_10__["MatFormField"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_10__["MatLabel"], _angular_material_select__WEBPACK_IMPORTED_MODULE_11__["MatSelect"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgModel"], _angular_common__WEBPACK_IMPORTED_MODULE_9__["NgForOf"], _angular_material_button__WEBPACK_IMPORTED_MODULE_12__["MatButton"], _angular_material_table__WEBPACK_IMPORTED_MODULE_3__["MatTable"], _angular_material_table__WEBPACK_IMPORTED_MODULE_3__["MatColumnDef"], _angular_material_table__WEBPACK_IMPORTED_MODULE_3__["MatHeaderCellDef"], _angular_material_table__WEBPACK_IMPORTED_MODULE_3__["MatCellDef"], _angular_material_table__WEBPACK_IMPORTED_MODULE_3__["MatHeaderRowDef"], _angular_material_table__WEBPACK_IMPORTED_MODULE_3__["MatRowDef"], _angular_material_core__WEBPACK_IMPORTED_MODULE_13__["MatOption"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormControlDirective"], _angular_material_select__WEBPACK_IMPORTED_MODULE_11__["MatSelectTrigger"], _angular_material_table__WEBPACK_IMPORTED_MODULE_3__["MatHeaderCell"], _angular_material_table__WEBPACK_IMPORTED_MODULE_3__["MatCell"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_14__["MatTooltip"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_15__["MatIcon"], _angular_material_table__WEBPACK_IMPORTED_MODULE_3__["MatHeaderRow"], _angular_material_table__WEBPACK_IMPORTED_MODULE_3__["MatRow"], _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_16__["MatSpinner"]], pipes: [_pipes_resultToString__WEBPACK_IMPORTED_MODULE_17__["ResultToStringPipe"]], styles: ["table[_ngcontent-%COMP%] {\r\n    width: 100%;\r\n  }\r\n  \r\n  .mat-form-field[_ngcontent-%COMP%] {\r\n    font-size: 14px;\r\n    width: 100%;\r\n  }\r\n  \r\n  td[_ngcontent-%COMP%], th[_ngcontent-%COMP%] {\r\n    width: 25%;\r\n  }\r\n  \r\n  .w-90[_ngcontent-%COMP%]{\r\n    width: 90%;\r\n    margin: 0 auto;\r\n}\r\n  \r\n  .w-50[_ngcontent-%COMP%]{\r\n  width: 50%;\r\n  margin: 0 auto;\r\n}\r\n  \r\n  .mat-column-sistema[_ngcontent-%COMP%] {\r\n  flex: none;\r\n  width: 15%;\r\n}\r\n  \r\n  .mat-column-cDispositivos[_ngcontent-%COMP%] {\r\n  flex: none;\r\n  width: 15%;\r\n}\r\n  \r\n  .mat-column-validado[_ngcontent-%COMP%] {\r\n  flex: none;\r\n  width: 5%;\r\n}\r\n  \r\n  .mat-column-name[_ngcontent-%COMP%] {\r\n  flex: none;\r\n  width: 15%;\r\n}\r\n  \r\n  .mat-column-nroSerie[_ngcontent-%COMP%] {\r\n  flex: none;\r\n  width: 15%;\r\n}\r\n  \r\n  .mat-column-email[_ngcontent-%COMP%] {\r\n  flex: none;\r\n  width: 15%;\r\n}\r\n  \r\n  mat-spinner[_ngcontent-%COMP%]{\r\n  margin: 0 auto;\r\n  position: fixed; \r\n  top: 50%;\r\n  left: 50%;\r\n}\r\n  \r\n  .greenColor[_ngcontent-%COMP%]{\r\n  color : green!important;\r\n}\r\n  \r\n  .redColor[_ngcontent-%COMP%]{\r\n  color : red!important;\r\n}\r\n  \r\n  .blueColor[_ngcontent-%COMP%]{\r\n  color : blue!important;\r\n}\r\n  \r\n  .buttonPrimary[_ngcontent-%COMP%]{\r\n  background: #5ba5de;\r\n    color: white;\r\n    margin-bottom: 1%;\r\n}\r\n  \r\n  .displayFlex[_ngcontent-%COMP%] {\r\n  display: flex;\r\n}\r\n  \r\n  .displayGrid[_ngcontent-%COMP%] {\r\n  display: grid;\r\n}\r\n  \r\n  .cardStyle[_ngcontent-%COMP%]{\r\n  width: 33%;\r\n  margin-right: 5px;\r\n  margin-left: 5px;\r\n\r\n}\r\n  \r\n  .marginTop1[_ngcontent-%COMP%]{\r\n  margin-top: 1%;\r\n}\r\n  \r\n  .marginBottom5[_ngcontent-%COMP%]{\r\n  margin-bottom:  5%;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50ZXMvbGlzdGEtZXN0dWRpb3MvbGlzdGEtZXN0dWRpb3MuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLFdBQVc7RUFDYjs7RUFFQTtJQUNFLGVBQWU7SUFDZixXQUFXO0VBQ2I7O0VBRUE7SUFDRSxVQUFVO0VBQ1o7O0VBRUY7SUFDSSxVQUFVO0lBQ1YsY0FBYztBQUNsQjs7RUFDQTtFQUNFLFVBQVU7RUFDVixjQUFjO0FBQ2hCOztFQUVBO0VBQ0UsVUFBVTtFQUNWLFVBQVU7QUFDWjs7RUFFQTtFQUNFLFVBQVU7RUFDVixVQUFVO0FBQ1o7O0VBRUE7RUFDRSxVQUFVO0VBQ1YsU0FBUztBQUNYOztFQUVBO0VBQ0UsVUFBVTtFQUNWLFVBQVU7QUFDWjs7RUFFQTtFQUNFLFVBQVU7RUFDVixVQUFVO0FBQ1o7O0VBRUE7RUFDRSxVQUFVO0VBQ1YsVUFBVTtBQUNaOztFQUVBO0VBQ0UsY0FBYztFQUNkLGVBQWUsRUFBRSxnQkFBZ0I7RUFDakMsUUFBUTtFQUNSLFNBQVM7QUFDWDs7RUFHQTtFQUNFLHVCQUF1QjtBQUN6Qjs7RUFFQTtFQUNFLHFCQUFxQjtBQUN2Qjs7RUFFQTtFQUNFLHNCQUFzQjtBQUN4Qjs7RUFDQTtFQUNFLG1CQUFtQjtJQUNqQixZQUFZO0lBQ1osaUJBQWlCO0FBQ3JCOztFQUNBO0VBQ0UsYUFBYTtBQUNmOztFQUNBO0VBQ0UsYUFBYTtBQUNmOztFQUNBO0VBQ0UsVUFBVTtFQUNWLGlCQUFpQjtFQUNqQixnQkFBZ0I7O0FBRWxCOztFQUNBO0VBQ0UsY0FBYztBQUNoQjs7RUFDQTtFQUNFLGtCQUFrQjtBQUNwQiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudGVzL2xpc3RhLWVzdHVkaW9zL2xpc3RhLWVzdHVkaW9zLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJ0YWJsZSB7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICB9XHJcbiAgXHJcbiAgLm1hdC1mb3JtLWZpZWxkIHtcclxuICAgIGZvbnQtc2l6ZTogMTRweDtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gIH1cclxuICBcclxuICB0ZCwgdGgge1xyXG4gICAgd2lkdGg6IDI1JTtcclxuICB9XHJcblxyXG4udy05MHtcclxuICAgIHdpZHRoOiA5MCU7XHJcbiAgICBtYXJnaW46IDAgYXV0bztcclxufVxyXG4udy01MHtcclxuICB3aWR0aDogNTAlO1xyXG4gIG1hcmdpbjogMCBhdXRvO1xyXG59XHJcblxyXG4ubWF0LWNvbHVtbi1zaXN0ZW1hIHtcclxuICBmbGV4OiBub25lO1xyXG4gIHdpZHRoOiAxNSU7XHJcbn1cclxuXHJcbi5tYXQtY29sdW1uLWNEaXNwb3NpdGl2b3Mge1xyXG4gIGZsZXg6IG5vbmU7XHJcbiAgd2lkdGg6IDE1JTtcclxufVxyXG5cclxuLm1hdC1jb2x1bW4tdmFsaWRhZG8ge1xyXG4gIGZsZXg6IG5vbmU7XHJcbiAgd2lkdGg6IDUlO1xyXG59XHJcblxyXG4ubWF0LWNvbHVtbi1uYW1lIHtcclxuICBmbGV4OiBub25lO1xyXG4gIHdpZHRoOiAxNSU7XHJcbn1cclxuXHJcbi5tYXQtY29sdW1uLW5yb1NlcmllIHtcclxuICBmbGV4OiBub25lO1xyXG4gIHdpZHRoOiAxNSU7XHJcbn1cclxuXHJcbi5tYXQtY29sdW1uLWVtYWlsIHtcclxuICBmbGV4OiBub25lO1xyXG4gIHdpZHRoOiAxNSU7XHJcbn1cclxuXHJcbm1hdC1zcGlubmVye1xyXG4gIG1hcmdpbjogMCBhdXRvO1xyXG4gIHBvc2l0aW9uOiBmaXhlZDsgLyogb3IgYWJzb2x1dGUgKi9cclxuICB0b3A6IDUwJTtcclxuICBsZWZ0OiA1MCU7XHJcbn1cclxuXHJcblxyXG4uZ3JlZW5Db2xvcntcclxuICBjb2xvciA6IGdyZWVuIWltcG9ydGFudDtcclxufVxyXG5cclxuLnJlZENvbG9ye1xyXG4gIGNvbG9yIDogcmVkIWltcG9ydGFudDtcclxufVxyXG5cclxuLmJsdWVDb2xvcntcclxuICBjb2xvciA6IGJsdWUhaW1wb3J0YW50O1xyXG59XHJcbi5idXR0b25QcmltYXJ5e1xyXG4gIGJhY2tncm91bmQ6ICM1YmE1ZGU7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbiAgICBtYXJnaW4tYm90dG9tOiAxJTtcclxufVxyXG4uZGlzcGxheUZsZXgge1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbn1cclxuLmRpc3BsYXlHcmlkIHtcclxuICBkaXNwbGF5OiBncmlkO1xyXG59XHJcbi5jYXJkU3R5bGV7XHJcbiAgd2lkdGg6IDMzJTtcclxuICBtYXJnaW4tcmlnaHQ6IDVweDtcclxuICBtYXJnaW4tbGVmdDogNXB4O1xyXG5cclxufVxyXG4ubWFyZ2luVG9wMXtcclxuICBtYXJnaW4tdG9wOiAxJTtcclxufVxyXG4ubWFyZ2luQm90dG9tNXtcclxuICBtYXJnaW4tYm90dG9tOiAgNSU7XHJcbn0iXX0= */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](ListaEstudiosComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
@@ -948,7 +948,7 @@ ListaEstudiosComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵd
                 templateUrl: './lista-estudios.component.html',
                 styleUrls: ['./lista-estudios.component.css']
             }]
-    }], function () { return [{ type: src_app_servicios_estudio_service__WEBPACK_IMPORTED_MODULE_4__["EstudioService"] }, { type: _angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"] }, { type: _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_7__["MatSnackBar"] }]; }, { paginator: [{
+    }], function () { return [{ type: src_app_servicios_estudio_service__WEBPACK_IMPORTED_MODULE_4__["StudyService"] }, { type: _angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"] }, { type: _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_7__["MatSnackBar"] }]; }, { paginator: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"],
             args: [_angular_material_paginator__WEBPACK_IMPORTED_MODULE_1__["MatPaginator"], { static: true }]
         }], sort: [{
@@ -1031,8 +1031,8 @@ function MenuComponent_div_0_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx_r0.fillerNav);
 } }
 class MenuComponent {
-    constructor(changeDetectorRef, media, serviciorouter) {
-        this.serviciorouter = serviciorouter;
+    constructor(changeDetectorRef, media, routerService) {
+        this.routerService = routerService;
         //fillerNav = Array.from({length: 50}, (_, i) => `Nav Item ${i + 1}`);
         this.fillerNav = [
             { name: "Usuarios", route: "usuarios", icon: "assignment_ind" },
@@ -1072,12 +1072,12 @@ MenuComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComp
 /*!**********************************************************************!*\
   !*** ./src/app/componentes/nuevo-estudio/nuevo-estudio.component.ts ***!
   \**********************************************************************/
-/*! exports provided: NuevoEstudioComponent */
+/*! exports provided: NewStudyComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NuevoEstudioComponent", function() { return NuevoEstudioComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NewStudyComponent", function() { return NewStudyComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
 /* harmony import */ var src_app_servicios_estudio_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/servicios/estudio.service */ "./src/app/servicios/estudio.service.ts");
@@ -1098,13 +1098,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-class NuevoEstudioComponent {
-    constructor(servicioStudy, servicioRouter, _snackBar) {
-        this.servicioStudy = servicioStudy;
-        this.servicioRouter = servicioRouter;
+class NewStudyComponent {
+    constructor(studyService, routerService, _snackBar) {
+        this.studyService = studyService;
+        this.routerService = routerService;
         this._snackBar = _snackBar;
         this.dnaAllowed = ["C", "T", "G", "A", "\n"];
-        this.nuevoEstudioForm = new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormGroup"]({
+        this.newStudyForm = new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormGroup"]({
             name: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]('', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required),
             country: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]('', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required),
             dna: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]('', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required)
@@ -1113,17 +1113,17 @@ class NuevoEstudioComponent {
     ngOnInit() {
     }
     dnaTextChanged() {
-        //var formatAdn = this.getFormattedAdn(this.nuevoEstudioForm.controls.adn.value);
-        Array.from(this.nuevoEstudioForm.controls.dna.value).forEach((element) => {
+        //var formatAdn = this.getFormattedAdn(this.newStudyForm.controls.adn.value);
+        Array.from(this.newStudyForm.controls.dna.value).forEach((element) => {
             if (!this.dnaAllowed.includes(element.toUpperCase())) {
-                this.nuevoEstudioForm.patchValue({
-                    dna: this.nuevoEstudioForm.controls.dna.value.replaceAll(element, "")
+                this.newStudyForm.patchValue({
+                    dna: this.newStudyForm.controls.dna.value.replaceAll(element, "")
                 });
             }
         });
     }
-    cancelar() {
-        this.servicioRouter.navigate(["/lista-analisis"]);
+    cancel() {
+        this.routerService.navigate(["/lista-analisis"]);
     }
     /**
      * @param dna string de NxN posiciones, previamente validado
@@ -1142,20 +1142,20 @@ class NuevoEstudioComponent {
         }
         return valida;
     }
-    nuevoEstudioClick() {
-        var dna = this.nuevoEstudioForm.controls.dna.value.trim().split("\n");
+    newStudyClick() {
+        var dna = this.newStudyForm.controls.dna.value.trim().split("\n");
         if (!this.validateDna(dna)) {
             let snackBarRef = this._snackBar.open('El dna no tiene el formato NxN', "Ok");
         }
         else {
             var study = {
-                name: this.nuevoEstudioForm.controls.name.value,
-                country: this.nuevoEstudioForm.controls.country.value,
+                name: this.newStudyForm.controls.name.value,
+                country: this.newStudyForm.controls.country.value,
                 dna: dna
             };
-            this.servicioStudy.insertStudy(study).subscribe(data => {
+            this.studyService.insertStudy(study).subscribe(data => {
                 let snackBarRef = this._snackBar.open('Caso cargado', "Ok");
-                this.servicioRouter.navigate(["/lista-analisis"]);
+                this.routerService.navigate(["/lista-analisis"]);
             }, err => {
                 console.log(err);
                 let snackBarRef = this._snackBar.open('Ups, ocurrio un error inesperado', "Ok");
@@ -1163,15 +1163,15 @@ class NuevoEstudioComponent {
         }
     }
 }
-NuevoEstudioComponent.ɵfac = function NuevoEstudioComponent_Factory(t) { return new (t || NuevoEstudioComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_servicios_estudio_service__WEBPACK_IMPORTED_MODULE_2__["EstudioService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_4__["MatSnackBar"])); };
-NuevoEstudioComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NuevoEstudioComponent, selectors: [["app-nuevo-estudio"]], decls: 20, vars: 1, consts: [[3, "formGroup", "ngSubmit"], ["type", "text", "matInput", "", "placeholder", "Nombre", "formControlName", "name"], ["matInput", "", "placeholder", "Pa\u00EDs", "formControlName", "country"], ["id", "dna", "name", "dna", "matInput", "", "placeholder", "Adn", "formControlName", "dna", 1, "dnaHeight", 3, "input"], [1, "displayFlex"], ["type", "submit", "mat-raised-button", "", 1, "buttonPrimary", "margin5"], ["type", "submit", "mat-raised-button", "", 3, "click"]], template: function NuevoEstudioComponent_Template(rf, ctx) { if (rf & 1) {
+NewStudyComponent.ɵfac = function NewStudyComponent_Factory(t) { return new (t || NewStudyComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_servicios_estudio_service__WEBPACK_IMPORTED_MODULE_2__["StudyService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_4__["MatSnackBar"])); };
+NewStudyComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NewStudyComponent, selectors: [["app-nuevo-estudio"]], decls: 20, vars: 1, consts: [[3, "formGroup", "ngSubmit"], ["type", "text", "matInput", "", "placeholder", "Nombre", "formControlName", "name"], ["matInput", "", "placeholder", "Pa\u00EDs", "formControlName", "country"], ["id", "dna", "name", "dna", "matInput", "", "placeholder", "Adn", "formControlName", "dna", 1, "dnaHeight", 3, "input"], [1, "displayFlex"], ["type", "submit", "mat-raised-button", "", 1, "buttonPrimary", "margin5"], ["type", "submit", "mat-raised-button", "", 3, "click"]], template: function NewStudyComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-card");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "mat-card-title");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Nuevo An\u00E1lisis");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "mat-card-content");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "form", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngSubmit", function NuevoEstudioComponent_Template_form_ngSubmit_4_listener() { return ctx.nuevoEstudioClick(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngSubmit", function NewStudyComponent_Template_form_ngSubmit_4_listener() { return ctx.newStudyClick(); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "p");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "mat-form-field");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](7, "input", 1);
@@ -1185,7 +1185,7 @@ NuevoEstudioComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵde
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "p");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "mat-form-field");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "textarea", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("input", function NuevoEstudioComponent_Template_textarea_input_13_listener() { return ctx.dnaTextChanged(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("input", function NewStudyComponent_Template_textarea_input_13_listener() { return ctx.dnaTextChanged(); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, " ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1195,7 +1195,7 @@ NuevoEstudioComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵde
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17, " Crear ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "button", 6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function NuevoEstudioComponent_Template_button_click_18_listener() { return ctx.cancelar(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function NewStudyComponent_Template_button_click_18_listener() { return ctx.cancel(); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](19, " Cancelar ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1204,16 +1204,16 @@ NuevoEstudioComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵde
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("formGroup", ctx.nuevoEstudioForm);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("formGroup", ctx.newStudyForm);
     } }, directives: [_angular_material_card__WEBPACK_IMPORTED_MODULE_5__["MatCard"], _angular_material_card__WEBPACK_IMPORTED_MODULE_5__["MatCardTitle"], _angular_material_card__WEBPACK_IMPORTED_MODULE_5__["MatCardContent"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["ɵangular_packages_forms_forms_y"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgControlStatusGroup"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormGroupDirective"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_6__["MatFormField"], _angular_material_input__WEBPACK_IMPORTED_MODULE_7__["MatInput"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControlName"], _angular_material_button__WEBPACK_IMPORTED_MODULE_8__["MatButton"]], styles: ["[_nghost-%COMP%]{\r\n    display: flex;\r\n    justify-content: center;\r\n    margin: 100px 0;\r\n}\r\n\r\n.mat-form-field[_ngcontent-%COMP%]{\r\n    width: 100%;\r\n    min-width: 300px;\r\n}\r\n\r\nmat-card-title[_ngcontent-%COMP%], mat-card-content[_ngcontent-%COMP%]{\r\n    display: flex;\r\n    justify-content: center;\r\n    padding: 2px;\r\n}\r\n\r\nbutton[_ngcontent-%COMP%]{\r\n    width: 100%;\r\n}\r\n\r\n.dnaHeight[_ngcontent-%COMP%]{\r\n    height: 100px;\r\n}\r\n\r\n.buttonPrimary[_ngcontent-%COMP%]{\r\n    background: #5ba5de;\r\n    color: white;\r\n  }\r\n\r\n.displayFlex[_ngcontent-%COMP%] {\r\n    display: flex;\r\n  }\r\n\r\n.margin5[_ngcontent-%COMP%] {\r\n    margin-right : 5px!important;\r\n  }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50ZXMvbnVldm8tZXN0dWRpby9udWV2by1lc3R1ZGlvLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLGVBQWU7QUFDbkI7O0FBRUE7SUFDSSxXQUFXO0lBQ1gsZ0JBQWdCO0FBQ3BCOztBQUVBOztJQUVJLGFBQWE7SUFDYix1QkFBdUI7SUFDdkIsWUFBWTtBQUNoQjs7QUFFQTtJQUNJLFdBQVc7QUFDZjs7QUFFQTtJQUNJLGFBQWE7QUFDakI7O0FBQ0E7SUFDSSxtQkFBbUI7SUFDbkIsWUFBWTtFQUNkOztBQUNBO0lBQ0UsYUFBYTtFQUNmOztBQUVBO0lBQ0UsNEJBQTRCO0VBQzlCIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50ZXMvbnVldm8tZXN0dWRpby9udWV2by1lc3R1ZGlvLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyI6aG9zdHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICAgIG1hcmdpbjogMTAwcHggMDtcclxufVxyXG5cclxuLm1hdC1mb3JtLWZpZWxke1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBtaW4td2lkdGg6IDMwMHB4O1xyXG59XHJcblxyXG5tYXQtY2FyZC10aXRsZSxcclxubWF0LWNhcmQtY29udGVudHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICAgIHBhZGRpbmc6IDJweDtcclxufVxyXG5cclxuYnV0dG9ue1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbn1cclxuXHJcbi5kbmFIZWlnaHR7XHJcbiAgICBoZWlnaHQ6IDEwMHB4O1xyXG59XHJcbi5idXR0b25QcmltYXJ5e1xyXG4gICAgYmFja2dyb3VuZDogIzViYTVkZTtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICB9XHJcbiAgLmRpc3BsYXlGbGV4IHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgfVxyXG5cclxuICAubWFyZ2luNSB7XHJcbiAgICBtYXJnaW4tcmlnaHQgOiA1cHghaW1wb3J0YW50O1xyXG4gIH0iXX0= */"] });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NuevoEstudioComponent, [{
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NewStudyComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
                 selector: 'app-nuevo-estudio',
                 templateUrl: './nuevo-estudio.component.html',
                 styleUrls: ['./nuevo-estudio.component.css']
             }]
-    }], function () { return [{ type: src_app_servicios_estudio_service__WEBPACK_IMPORTED_MODULE_2__["EstudioService"] }, { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"] }, { type: _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_4__["MatSnackBar"] }]; }, null); })();
+    }], function () { return [{ type: src_app_servicios_estudio_service__WEBPACK_IMPORTED_MODULE_2__["StudyService"] }, { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"] }, { type: _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_4__["MatSnackBar"] }]; }, null); })();
 
 
 /***/ }),
@@ -1301,12 +1301,12 @@ ResultToStringPipe.ɵpipe = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefi
 /*!**********************************************!*\
   !*** ./src/app/servicios/estudio.service.ts ***!
   \**********************************************/
-/*! exports provided: EstudioService */
+/*! exports provided: StudyService */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EstudioService", function() { return EstudioService; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StudyService", function() { return StudyService; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
 /* harmony import */ var _global_globals__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../global/globals */ "./src/app/global/globals.ts");
@@ -1318,7 +1318,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-class EstudioService {
+class StudyService {
     constructor(http, servicioHttp) {
         this.http = http;
         this.servicioHttp = servicioHttp;
@@ -1358,9 +1358,9 @@ class EstudioService {
         }));
     }
 }
-EstudioService.ɵfac = function EstudioService_Factory(t) { return new (t || EstudioService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_http_client_service__WEBPACK_IMPORTED_MODULE_3__["CustomHttpClient"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClient"])); };
-EstudioService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: EstudioService, factory: EstudioService.ɵfac, providedIn: 'root' });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](EstudioService, [{
+StudyService.ɵfac = function StudyService_Factory(t) { return new (t || StudyService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_http_client_service__WEBPACK_IMPORTED_MODULE_3__["CustomHttpClient"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClient"])); };
+StudyService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: StudyService, factory: StudyService.ɵfac, providedIn: 'root' });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](StudyService, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
         args: [{
                 providedIn: 'root'
