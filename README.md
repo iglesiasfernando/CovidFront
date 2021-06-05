@@ -1,5 +1,5 @@
 # MeliCovid
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.8.<br>
+Proyecto generado con [Angular CLI](https://github.com/angular/angular-cli) version 9.1.8.<br>
 
 <b>Hosting</b><br>
 El frontend esta hosteado en github => https://iglesiasfernando.github.io/CovidFront/lista-analisis
