@@ -24,7 +24,7 @@ import {FormControl} from '@angular/forms';
     templateUrl: './lista-estudios.component.html',
     styleUrls: ['./lista-estudios.component.css']
   })
-  export class ListaEstudiosComponent implements OnInit {
+  export class StudyListComponent implements OnInit {
   
     displayedColumns: string[] = ['Nombre', 'Pais', 'Resultado', 'Detalle'];
     dataSource: MatTableDataSource<estudioInterface>;

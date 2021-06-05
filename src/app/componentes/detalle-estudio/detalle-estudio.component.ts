@@ -8,7 +8,7 @@ import { StudyService } from 'src/app/servicios/estudio.service';
   templateUrl: './detalle-estudio.component.html',
   styleUrls: ['./detalle-estudio.component.css']
 })
-export class DetalleEstudioComponent implements OnInit {
+export class StudyDetailComponent implements OnInit {
 
   public study;
   constructor( private routerService: Router,private studyService: StudyService) { }

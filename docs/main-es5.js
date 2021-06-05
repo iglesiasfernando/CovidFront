@@ -87,13 +87,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     var routes = [{
       path: 'lista-analisis',
-      component: _componentes_lista_estudios_lista_estudios_component__WEBPACK_IMPORTED_MODULE_2__["ListaEstudiosComponent"]
+      component: _componentes_lista_estudios_lista_estudios_component__WEBPACK_IMPORTED_MODULE_2__["StudyListComponent"]
     }, {
       path: 'nuevo-analisis',
       component: _componentes_nuevo_estudio_nuevo_estudio_component__WEBPACK_IMPORTED_MODULE_3__["NewStudyComponent"]
     }, {
       path: 'detalle-analisis',
-      component: _componentes_detalle_estudio_detalle_estudio_component__WEBPACK_IMPORTED_MODULE_4__["DetalleEstudioComponent"]
+      component: _componentes_detalle_estudio_detalle_estudio_component__WEBPACK_IMPORTED_MODULE_4__["StudyDetailComponent"]
     }];
 
     var AppRoutingModule = function AppRoutingModule() {
@@ -428,7 +428,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     (function () {
       (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](AppModule, {
-        declarations: [_pipes_resultToString__WEBPACK_IMPORTED_MODULE_8__["ResultToStringPipe"], _app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"], _componentes_header_header_component__WEBPACK_IMPORTED_MODULE_9__["HeaderComponent"], _componentes_menu_menu_component__WEBPACK_IMPORTED_MODULE_10__["MenuComponent"], _componentes_lista_estudios_lista_estudios_component__WEBPACK_IMPORTED_MODULE_27__["ListaEstudiosComponent"], _componentes_nuevo_estudio_nuevo_estudio_component__WEBPACK_IMPORTED_MODULE_28__["NewStudyComponent"], _componentes_detalle_estudio_detalle_estudio_component__WEBPACK_IMPORTED_MODULE_29__["DetalleEstudioComponent"]],
+        declarations: [_pipes_resultToString__WEBPACK_IMPORTED_MODULE_8__["ResultToStringPipe"], _app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"], _componentes_header_header_component__WEBPACK_IMPORTED_MODULE_9__["HeaderComponent"], _componentes_menu_menu_component__WEBPACK_IMPORTED_MODULE_10__["MenuComponent"], _componentes_lista_estudios_lista_estudios_component__WEBPACK_IMPORTED_MODULE_27__["StudyListComponent"], _componentes_nuevo_estudio_nuevo_estudio_component__WEBPACK_IMPORTED_MODULE_28__["NewStudyComponent"], _componentes_detalle_estudio_detalle_estudio_component__WEBPACK_IMPORTED_MODULE_29__["StudyDetailComponent"]],
         imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_4__["AppRoutingModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_6__["BrowserAnimationsModule"], _angular_material_slider__WEBPACK_IMPORTED_MODULE_22__["MatSliderModule"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_11__["MatToolbarModule"], _angular_material_table__WEBPACK_IMPORTED_MODULE_12__["MatTableModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_13__["MatInputModule"], _angular_material_paginator__WEBPACK_IMPORTED_MODULE_14__["MatPaginatorModule"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_15__["MatSidenavModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_16__["MatIconModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_17__["MatListModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_18__["MatButtonModule"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_19__["MatTooltipModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_20__["MatCardModule"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_21__["MatFormFieldModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["ReactiveFormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"], _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_23__["MatProgressSpinnerModule"], _angular_material_select__WEBPACK_IMPORTED_MODULE_24__["MatSelectModule"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_25__["MatDividerModule"], _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_26__["MatSnackBarModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"]]
       });
     })();
@@ -439,7 +439,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AppModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
         args: [{
-          declarations: [_pipes_resultToString__WEBPACK_IMPORTED_MODULE_8__["ResultToStringPipe"], _app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"], _componentes_header_header_component__WEBPACK_IMPORTED_MODULE_9__["HeaderComponent"], _componentes_menu_menu_component__WEBPACK_IMPORTED_MODULE_10__["MenuComponent"], _componentes_lista_estudios_lista_estudios_component__WEBPACK_IMPORTED_MODULE_27__["ListaEstudiosComponent"], _componentes_nuevo_estudio_nuevo_estudio_component__WEBPACK_IMPORTED_MODULE_28__["NewStudyComponent"], _componentes_detalle_estudio_detalle_estudio_component__WEBPACK_IMPORTED_MODULE_29__["DetalleEstudioComponent"]],
+          declarations: [_pipes_resultToString__WEBPACK_IMPORTED_MODULE_8__["ResultToStringPipe"], _app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"], _componentes_header_header_component__WEBPACK_IMPORTED_MODULE_9__["HeaderComponent"], _componentes_menu_menu_component__WEBPACK_IMPORTED_MODULE_10__["MenuComponent"], _componentes_lista_estudios_lista_estudios_component__WEBPACK_IMPORTED_MODULE_27__["StudyListComponent"], _componentes_nuevo_estudio_nuevo_estudio_component__WEBPACK_IMPORTED_MODULE_28__["NewStudyComponent"], _componentes_detalle_estudio_detalle_estudio_component__WEBPACK_IMPORTED_MODULE_29__["StudyDetailComponent"]],
           imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_4__["AppRoutingModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_6__["BrowserAnimationsModule"], _angular_material_slider__WEBPACK_IMPORTED_MODULE_22__["MatSliderModule"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_11__["MatToolbarModule"], _angular_material_table__WEBPACK_IMPORTED_MODULE_12__["MatTableModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_13__["MatInputModule"], _angular_material_paginator__WEBPACK_IMPORTED_MODULE_14__["MatPaginatorModule"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_15__["MatSidenavModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_16__["MatIconModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_17__["MatListModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_18__["MatButtonModule"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_19__["MatTooltipModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_20__["MatCardModule"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_21__["MatFormFieldModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["ReactiveFormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"], _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_23__["MatProgressSpinnerModule"], _angular_material_select__WEBPACK_IMPORTED_MODULE_24__["MatSelectModule"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_25__["MatDividerModule"], _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_26__["MatSnackBarModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"]],
           providers: [_servicios_http_client_service__WEBPACK_IMPORTED_MODULE_3__["CustomHttpClient"]],
           bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
@@ -456,18 +456,18 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     !*** ./src/app/componentes/detalle-estudio/detalle-estudio.component.ts ***!
     \**************************************************************************/
 
-  /*! exports provided: DetalleEstudioComponent */
+  /*! exports provided: StudyDetailComponent */
 
   /***/
-  function srcAppComponentesDetalleEstudioDetalleEstudioComponentTs(module, __webpack_exports__, __webpack_require__) {
+  function srcAppComponentesDetalleEstudioStudyDetailComponentTs(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony export (binding) */
 
 
-    __webpack_require__.d(__webpack_exports__, "DetalleEstudioComponent", function () {
-      return DetalleEstudioComponent;
+    __webpack_require__.d(__webpack_exports__, "StudyDetailComponent", function () {
+      return StudyDetailComponent;
     });
     /* harmony import */
 
@@ -512,7 +512,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /*! ../../pipes/resultToString */
     "./src/app/pipes/resultToString.ts");
 
-    function DetalleEstudioComponent_ng_container_30_Template(rf, ctx) {
+    function StudyDetailComponent_ng_container_30_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](0);
 
@@ -534,15 +534,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }
 
-    var DetalleEstudioComponent = /*#__PURE__*/function () {
-      function DetalleEstudioComponent(routerService, studyService) {
-        _classCallCheck(this, DetalleEstudioComponent);
+    var StudyDetailComponent = /*#__PURE__*/function () {
+      function StudyDetailComponent(routerService, studyService) {
+        _classCallCheck(this, StudyDetailComponent);
 
         this.routerService = routerService;
         this.studyService = studyService;
       }
 
-      _createClass(DetalleEstudioComponent, [{
+      _createClass(StudyDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
           if (!src_app_servicios_estudio_service__WEBPACK_IMPORTED_MODULE_1__["StudyService"].detailStudy) {
@@ -558,20 +558,20 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }
       }]);
 
-      return DetalleEstudioComponent;
+      return StudyDetailComponent;
     }();
 
-    DetalleEstudioComponent.ɵfac = function DetalleEstudioComponent_Factory(t) {
-      return new (t || DetalleEstudioComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_servicios_estudio_service__WEBPACK_IMPORTED_MODULE_1__["StudyService"]));
+    StudyDetailComponent.ɵfac = function StudyDetailComponent_Factory(t) {
+      return new (t || StudyDetailComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_servicios_estudio_service__WEBPACK_IMPORTED_MODULE_1__["StudyService"]));
     };
 
-    DetalleEstudioComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
-      type: DetalleEstudioComponent,
+    StudyDetailComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+      type: StudyDetailComponent,
       selectors: [["app-detalle-estudio"]],
       decls: 34,
       vars: 7,
       consts: [[1, "w-50"], [3, "outerHTML"], [2, "float", "left"], [4, "ngFor", "ngForOf"], ["type", "submit", "mat-raised-button", "", 3, "click"]],
-      template: function DetalleEstudioComponent_Template(rf, ctx) {
+      template: function StudyDetailComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-card", 0);
 
@@ -661,7 +661,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](29, "td");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](30, DetalleEstudioComponent_ng_container_30_Template, 3, 1, "ng-container", 3);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](30, StudyDetailComponent_ng_container_30_Template, 3, 1, "ng-container", 3);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -671,7 +671,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](32, "button", 4);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function DetalleEstudioComponent_Template_button_click_32_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function StudyDetailComponent_Template_button_click_32_listener() {
             return ctx.cancel();
           });
 
@@ -717,7 +717,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /*@__PURE__*/
 
     (function () {
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](DetalleEstudioComponent, [{
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](StudyDetailComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
           selector: 'app-detalle-estudio',
@@ -835,18 +835,18 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     !*** ./src/app/componentes/lista-estudios/lista-estudios.component.ts ***!
     \************************************************************************/
 
-  /*! exports provided: ListaEstudiosComponent */
+  /*! exports provided: StudyListComponent */
 
   /***/
-  function srcAppComponentesListaEstudiosListaEstudiosComponentTs(module, __webpack_exports__, __webpack_require__) {
+  function srcAppComponentesListaEstudiosStudyListComponentTs(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony export (binding) */
 
 
-    __webpack_require__.d(__webpack_exports__, "ListaEstudiosComponent", function () {
-      return ListaEstudiosComponent;
+    __webpack_require__.d(__webpack_exports__, "StudyListComponent", function () {
+      return StudyListComponent;
     });
     /* harmony import */
 
@@ -957,7 +957,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /*! ../../pipes/resultToString */
     "./src/app/pipes/resultToString.ts");
 
-    function ListaEstudiosComponent_ng_container_20_mat_option_7_Template(rf, ctx) {
+    function StudyListComponent_ng_container_20_mat_option_7_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-option", 25);
 
@@ -977,7 +977,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }
 
-    function ListaEstudiosComponent_ng_container_20_mat_form_field_8_span_6_Template(rf, ctx) {
+    function StudyListComponent_ng_container_20_mat_form_field_8_span_6_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "span", 28);
 
@@ -995,7 +995,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }
 
-    function ListaEstudiosComponent_ng_container_20_mat_form_field_8_mat_option_7_Template(rf, ctx) {
+    function StudyListComponent_ng_container_20_mat_form_field_8_mat_option_7_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-option", 25);
 
@@ -1015,7 +1015,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }
 
-    function ListaEstudiosComponent_ng_container_20_mat_form_field_8_Template(rf, ctx) {
+    function StudyListComponent_ng_container_20_mat_form_field_8_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-form-field", 8);
 
@@ -1031,11 +1031,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](6, ListaEstudiosComponent_ng_container_20_mat_form_field_8_span_6_Template, 2, 2, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](6, StudyListComponent_ng_container_20_mat_form_field_8_span_6_Template, 2, 2, "span", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](7, ListaEstudiosComponent_ng_container_20_mat_form_field_8_mat_option_7_Template, 2, 2, "mat-option", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](7, StudyListComponent_ng_container_20_mat_form_field_8_mat_option_7_Template, 2, 2, "mat-option", 10);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -1063,7 +1063,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }
 
-    function ListaEstudiosComponent_ng_container_20_mat_form_field_9_span_6_Template(rf, ctx) {
+    function StudyListComponent_ng_container_20_mat_form_field_9_span_6_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "span", 28);
 
@@ -1081,7 +1081,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }
 
-    function ListaEstudiosComponent_ng_container_20_mat_form_field_9_mat_option_7_Template(rf, ctx) {
+    function StudyListComponent_ng_container_20_mat_form_field_9_mat_option_7_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-option", 25);
 
@@ -1101,7 +1101,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }
 
-    function ListaEstudiosComponent_ng_container_20_mat_form_field_9_Template(rf, ctx) {
+    function StudyListComponent_ng_container_20_mat_form_field_9_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-form-field", 8);
 
@@ -1117,11 +1117,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](6, ListaEstudiosComponent_ng_container_20_mat_form_field_9_span_6_Template, 2, 2, "span", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](6, StudyListComponent_ng_container_20_mat_form_field_9_span_6_Template, 2, 2, "span", 27);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](7, ListaEstudiosComponent_ng_container_20_mat_form_field_9_mat_option_7_Template, 2, 2, "mat-option", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](7, StudyListComponent_ng_container_20_mat_form_field_9_mat_option_7_Template, 2, 2, "mat-option", 10);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -1149,7 +1149,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }
 
-    function ListaEstudiosComponent_ng_container_20_th_17_Template(rf, ctx) {
+    function StudyListComponent_ng_container_20_th_17_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "th", 29);
 
@@ -1159,7 +1159,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }
 
-    function ListaEstudiosComponent_ng_container_20_td_18_Template(rf, ctx) {
+    function StudyListComponent_ng_container_20_td_18_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "td", 30);
 
@@ -1177,7 +1177,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }
 
-    function ListaEstudiosComponent_ng_container_20_th_20_Template(rf, ctx) {
+    function StudyListComponent_ng_container_20_th_20_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "th", 29);
 
@@ -1187,7 +1187,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }
 
-    function ListaEstudiosComponent_ng_container_20_td_21_Template(rf, ctx) {
+    function StudyListComponent_ng_container_20_td_21_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "td", 30);
 
@@ -1205,7 +1205,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }
 
-    function ListaEstudiosComponent_ng_container_20_th_23_Template(rf, ctx) {
+    function StudyListComponent_ng_container_20_th_23_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "th", 29);
 
@@ -1215,7 +1215,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }
 
-    function ListaEstudiosComponent_ng_container_20_td_24_Template(rf, ctx) {
+    function StudyListComponent_ng_container_20_td_24_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "td", 30);
 
@@ -1235,7 +1235,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }
 
-    function ListaEstudiosComponent_ng_container_20_th_26_Template(rf, ctx) {
+    function StudyListComponent_ng_container_20_th_26_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "th", 32);
 
@@ -1245,7 +1245,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }
 
-    function ListaEstudiosComponent_ng_container_20_td_27_Template(rf, ctx) {
+    function StudyListComponent_ng_container_20_td_27_Template(rf, ctx) {
       if (rf & 1) {
         var _r27 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
 
@@ -1253,7 +1253,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "button", 33);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function ListaEstudiosComponent_ng_container_20_td_27_Template_button_click_1_listener() {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function StudyListComponent_ng_container_20_td_27_Template_button_click_1_listener() {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r27);
 
           var row_r25 = ctx.$implicit;
@@ -1275,19 +1275,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }
 
-    function ListaEstudiosComponent_ng_container_20_tr_28_Template(rf, ctx) {
+    function StudyListComponent_ng_container_20_tr_28_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "tr", 34);
       }
     }
 
-    function ListaEstudiosComponent_ng_container_20_tr_29_Template(rf, ctx) {
+    function StudyListComponent_ng_container_20_tr_29_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "tr", 35);
       }
     }
 
-    function ListaEstudiosComponent_ng_container_20_Template(rf, ctx) {
+    function StudyListComponent_ng_container_20_Template(rf, ctx) {
       if (rf & 1) {
         var _r30 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
 
@@ -1307,7 +1307,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "mat-select", 9);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function ListaEstudiosComponent_ng_container_20_Template_mat_select_ngModelChange_6_listener($event) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function StudyListComponent_ng_container_20_Template_mat_select_ngModelChange_6_listener($event) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r30);
 
           var ctx_r29 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
@@ -1315,19 +1315,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           return ctx_r29.selectedFilterValue = $event;
         });
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](7, ListaEstudiosComponent_ng_container_20_mat_option_7_Template, 2, 2, "mat-option", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](7, StudyListComponent_ng_container_20_mat_option_7_Template, 2, 2, "mat-option", 10);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](8, ListaEstudiosComponent_ng_container_20_mat_form_field_8_Template, 8, 4, "mat-form-field", 11);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](8, StudyListComponent_ng_container_20_mat_form_field_8_Template, 8, 4, "mat-form-field", 11);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](9, ListaEstudiosComponent_ng_container_20_mat_form_field_9_Template, 8, 4, "mat-form-field", 11);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](9, StudyListComponent_ng_container_20_mat_form_field_9_Template, 8, 4, "mat-form-field", 11);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "button", 12);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function ListaEstudiosComponent_ng_container_20_Template_button_click_10_listener() {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function StudyListComponent_ng_container_20_Template_button_click_10_listener() {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r30);
 
           var ctx_r31 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
@@ -1345,7 +1345,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "button", 13);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function ListaEstudiosComponent_ng_container_20_Template_button_click_12_listener() {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function StudyListComponent_ng_container_20_Template_button_click_12_listener() {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r30);
 
           var ctx_r32 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
@@ -1363,39 +1363,39 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](16, 16);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](17, ListaEstudiosComponent_ng_container_20_th_17_Template, 2, 0, "th", 17);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](17, StudyListComponent_ng_container_20_th_17_Template, 2, 0, "th", 17);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](18, ListaEstudiosComponent_ng_container_20_td_18_Template, 2, 1, "td", 18);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](18, StudyListComponent_ng_container_20_td_18_Template, 2, 1, "td", 18);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](19, 19);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](20, ListaEstudiosComponent_ng_container_20_th_20_Template, 2, 0, "th", 17);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](20, StudyListComponent_ng_container_20_th_20_Template, 2, 0, "th", 17);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](21, ListaEstudiosComponent_ng_container_20_td_21_Template, 2, 1, "td", 18);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](21, StudyListComponent_ng_container_20_td_21_Template, 2, 1, "td", 18);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](22, 20);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](23, ListaEstudiosComponent_ng_container_20_th_23_Template, 2, 0, "th", 17);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](23, StudyListComponent_ng_container_20_th_23_Template, 2, 0, "th", 17);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](24, ListaEstudiosComponent_ng_container_20_td_24_Template, 3, 3, "td", 18);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](24, StudyListComponent_ng_container_20_td_24_Template, 3, 3, "td", 18);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](25, 21);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](26, ListaEstudiosComponent_ng_container_20_th_26_Template, 2, 0, "th", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](26, StudyListComponent_ng_container_20_th_26_Template, 2, 0, "th", 22);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](27, ListaEstudiosComponent_ng_container_20_td_27_Template, 4, 0, "td", 18);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](27, StudyListComponent_ng_container_20_td_27_Template, 4, 0, "td", 18);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](28, ListaEstudiosComponent_ng_container_20_tr_28_Template, 1, 0, "tr", 23);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](28, StudyListComponent_ng_container_20_tr_28_Template, 1, 0, "tr", 23);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](29, ListaEstudiosComponent_ng_container_20_tr_29_Template, 1, 0, "tr", 24);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](29, StudyListComponent_ng_container_20_tr_29_Template, 1, 0, "tr", 24);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -1441,7 +1441,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }
 
-    function ListaEstudiosComponent_ng_container_22_Template(rf, ctx) {
+    function StudyListComponent_ng_container_22_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](0);
 
@@ -1451,9 +1451,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }
 
-    var ListaEstudiosComponent = /*#__PURE__*/function () {
-      function ListaEstudiosComponent(studyService, routerService, _snackBar) {
-        _classCallCheck(this, ListaEstudiosComponent);
+    var StudyListComponent = /*#__PURE__*/function () {
+      function StudyListComponent(studyService, routerService, _snackBar) {
+        _classCallCheck(this, StudyListComponent);
 
         this.studyService = studyService;
         this.routerService = routerService;
@@ -1466,7 +1466,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         this.selectedResultFilter = new _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormControl"]();
       }
 
-      _createClass(ListaEstudiosComponent, [{
+      _createClass(StudyListComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
           this.loading = true;
@@ -1642,17 +1642,17 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function eliminar(id) {}
       }]);
 
-      return ListaEstudiosComponent;
+      return StudyListComponent;
     }();
 
-    ListaEstudiosComponent.ɵfac = function ListaEstudiosComponent_Factory(t) {
-      return new (t || ListaEstudiosComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_servicios_estudio_service__WEBPACK_IMPORTED_MODULE_4__["StudyService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_7__["MatSnackBar"]));
+    StudyListComponent.ɵfac = function StudyListComponent_Factory(t) {
+      return new (t || StudyListComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_servicios_estudio_service__WEBPACK_IMPORTED_MODULE_4__["StudyService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_7__["MatSnackBar"]));
     };
 
-    ListaEstudiosComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
-      type: ListaEstudiosComponent,
+    StudyListComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+      type: StudyListComponent,
       selectors: [["app-lista-estudios"]],
-      viewQuery: function ListaEstudiosComponent_Query(rf, ctx) {
+      viewQuery: function StudyListComponent_Query(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵstaticViewQuery"](_angular_material_paginator__WEBPACK_IMPORTED_MODULE_1__["MatPaginator"], true);
 
@@ -1669,7 +1669,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       decls: 23,
       vars: 5,
       consts: [[1, "w-50", "marginTop1", "marginBottom5"], [1, "displayFlex", "marginBottom5"], [1, "cardStyle", "greenColor"], [1, "displayGrid"], [1, "cardStyle", "redColor"], [1, "cardStyle", "blueColor"], [4, "ngIf"], [1, "filter-section", "marginBottom5"], ["appearance", "fill"], [3, "ngModel", "ngModelChange"], [3, "value", 4, "ngFor", "ngForOf"], ["appearance", "fill", 4, "ngIf"], ["mat-button", "", 1, "buttonPrimary", 3, "disabled", "click"], ["mat-button", "", 1, "buttonPrimary", 3, "click"], [1, "mat-elevation-z8"], ["mat-table", "", "matSort", "", 3, "dataSource"], ["matColumnDef", "Nombre"], ["mat-header-cell", "", "mat-sort-header", "", 4, "matHeaderCellDef"], ["mat-cell", "", 4, "matCellDef"], ["matColumnDef", "Pais"], ["matColumnDef", "Resultado"], ["matColumnDef", "Detalle"], ["mat-header-cell", "", 4, "matHeaderCellDef"], ["mat-header-row", "", 4, "matHeaderRowDef"], ["mat-row", "", 4, "matRowDef", "matRowDefColumns"], [3, "value"], ["multiple", "", 3, "formControl"], ["class", "example-additional-selection", 4, "ngIf"], [1, "example-additional-selection"], ["mat-header-cell", "", "mat-sort-header", ""], ["mat-cell", ""], [3, "outerHTML"], ["mat-header-cell", ""], ["mat-icon-button", "", "color", "primary", "matTooltip", "Detalle estudio", "matTooltipPosition", "right", "aria-label", "Detalle", 3, "click"], ["mat-header-row", ""], ["mat-row", ""]],
-      template: function ListaEstudiosComponent_Template(rf, ctx) {
+      template: function StudyListComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
 
@@ -1737,11 +1737,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](20, ListaEstudiosComponent_ng_container_20_Template, 30, 8, "ng-container", 6);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](20, StudyListComponent_ng_container_20_Template, 30, 8, "ng-container", 6);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "div");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](22, ListaEstudiosComponent_ng_container_22_Template, 2, 0, "ng-container", 6);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](22, StudyListComponent_ng_container_22_Template, 2, 0, "ng-container", 6);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -1777,7 +1777,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /*@__PURE__*/
 
     (function () {
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](ListaEstudiosComponent, [{
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](StudyListComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
           selector: 'app-lista-estudios',
