@@ -25,7 +25,7 @@ export class MenuComponent implements OnInit {
   constructor(
     changeDetectorRef: ChangeDetectorRef, 
     media: MediaMatcher,
-    private serviciorouter: Router
+    private routerService: Router
     ) {
     this.mobileQuery = media.matchMedia('(max-width: 600px)');
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();

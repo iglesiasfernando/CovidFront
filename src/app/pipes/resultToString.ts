@@ -26,7 +26,7 @@ export class ResultToStringPipe implements PipeTransform {
 
           break;
     }
-    var retorno = '<span [class]="' + colorClass +'" >'+ respuesta +'</span> ';
+    var retorno = '<span>'+ respuesta +'</span> ';
     return retorno;
     
    
